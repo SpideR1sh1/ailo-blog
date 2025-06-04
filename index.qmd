@@ -1,0 +1,99 @@
+<div style="text-align: center;">
+  <img src="AILO.png" alt="AILO Logo" style="max-width: 300px;">
+</div>
+
+> Peeling back the layers of artificial minds — one story, one system, one week at a time.
+
+Welcome to my blog, a storytelling-engineering journal that explores the strange, emotional, and sometimes unpredictable world of simulated intelligence. This blog documents the design of increasingly complex AI agents — not as models in a paper, but as characters in a world. You will hopefully see my successes, but more often you will see my failures.
+
+Each post follows a weekly build cycle with:
+
+- 🧠 new cognitive capabilities (memory, planning, belief, etc.)
+- 🎮 playable sandbox simulations (built in Unity)
+- ✍️ reflective writing that blends code, metaphor, and narrative
+
+## 🎯 Core Goal
+
+To build agents that don't just work — they remember, feel, and change.
+This blog tracks that evolution, combining:
+
+- Research-inspired engineering
+- Weekly storytelling
+- Experimental system design
+
+## 📆 Current Phase
+
+### 🧠 Phase 1: Simulated Mind in a Game World
+
+A 12-week experiment in designing agents that live, reflect, and grow inside a Stardew Valley–style sandbox. Each week introduces a new layer of mind — from walking to memory to personality drift.
+
+### 🗺️ Latest Progress
+
+✅ [Week 1 – "It's Alive: Bootstrapping the Simulated Mind"](posts/week1.qmd) (Coming Soon)
+- Building the bare-bones agent scaffold
+- Movement, observation, and basic loop
+- Event loop and reflex agents
+
+## 🧰 Tools
+
+| Stack | Purpose |
+|-------|---------|
+| 🛠 Unity | Game simulation & agent environment |
+| 🧪 Python | Optional backend logic & memory manipulation |
+| 📚 Quarto | Blog generation, visual embeds, interactivity |
+| 🌐 OpenAI/HuggingFace | LLMs used in later phases (Phase 2 onward) |
+
+## 🧅 What the Onion Means
+
+Wherever you see this icon → 🧅
+That marks a layered word: something that needs peeling.
+
+Hover over the onion icon after a word to see its layered meaning!
+
+These terms will have:
+- The official definition
+- And my AILOcard-style version — honest, funny, and functional
+
+Example: **Belief** <span class="onion-term">🧅<div class="onion-tooltip">
+  <h4>Belief</h4>
+  <p><strong>Formal:</strong> A structured mental representation about the world held with some confidence.</p>
+  <p><strong>AILO-style:</strong> A hunch the agent will probably act on… even if it's wrong.</p>
+</div></span>
+
+These definitions live in the [glossary](glossary.qmd) and appear in hover-tooltips throughout posts.
+
+## 👽 Who Is the Martian?
+
+Back in middle school, my Physics teacher told me the only way to understand something was to pretend you were explaining it to a man from Mars.
+
+I've never forgotten that.
+
+At the end of every post you'll find a Martian Mode 👽. This is a plain-language TLDR written for someone from another world — or another field.
+
+It breaks down:
+- What I built
+- Why it matters
+- How to explain it to your obtuse martian friend
+
+Because interpretability isn't just for the models — it's for the humans, too.
+
+
+## 🌱 Future Phases
+This isn't just a one-off experiment. AILO unfolds across three interconnected phases:
+
+| 🧭 Phase    | 🧠 Title                        | 🔬 Focus                                    | 👽 Simple explanation                                      |
+|----------------|----------------------------------|---------------------------------------------|-------------------------------------------------------------------------|
+| 🧠Phase 1 | Simulated Mind in a Game World   | Agents, memory, mood, identity (Unity-based)| How intelligence is made — like growing a brain one behavior at a time   |
+| 🔍Phase 2 | LLM Debugger                     | Visual tooling for understanding how LLMs think| How intelligence thinks — and how to actually look inside its head       |
+| 🧪Phase 3 | Quantum-Native Reasoning         | Research into quantum-aligned reasoning systems| How intelligence can be redefined — with math that doesn't follow our rules |
+
+## 🌀 Why This Blog Exists
+
+This isn't a devlog. It's not a textbook.
+It's a research-meets-narrative experiment — an engineering novel, one post at a time.
+
+You'll see code.
+
+You'll meet characters.
+
+And you'll slowly forget whether the agent is simulating a mind — or you are.

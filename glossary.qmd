@@ -1,0 +1,35 @@
+---
+title: "AILO Glossary"
+---
+
+# 🧅 AILO Glossary
+
+Welcome to the AILO glossary, where we peel back the layers of AI terminology to reveal both the formal definitions and our more approachable AILO-style interpretations.
+
+## A
+
+### Agent 🧅
+- **Formal**: An autonomous entity that perceives its environment and takes actions to achieve specific goals.
+- **AILO-style**: A digital being that's learning to walk before it can run (or think, or feel).
+
+## E
+
+### Event Loop 🧅
+- **Formal**: A programming construct that waits for and dispatches events or messages in a program.
+- **AILO-style**: The agent's internal clock that keeps it from standing still like a statue.
+
+## R
+
+### Reflex Agent 🧅
+- **Formal**: An agent that selects actions based on the current percept, ignoring the rest of the percept history.
+- **AILO-style**: A digital creature that reacts first and asks questions later (or never).
+
+## B
+
+### Belief 🧅
+- **Formal**: A structured mental representation about the world held with some confidence.
+- **AILO-style**: A hunch the agent will probably act on… even if it's wrong.
+
+---
+
+*This glossary will grow as we add more layers to our simulated minds. Each term marked with 🧅 has both a formal definition and an AILO-style interpretation that makes it more approachable and fun.* 

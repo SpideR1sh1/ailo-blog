@@ -1,0 +1,29 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Theme logic only
+  const input = document.getElementById('theme-toggle');
+  const icon = document.getElementById('theme-icon');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const saved = localStorage.getItem('ailo-theme');
+  if (saved === 'dark' || (!saved && prefersDark)) {
+    document.body.classList.add('dark-mode');
+    input.checked = true;
+    icon.textContent = '🌚';
+  } else {
+    document.body.classList.remove('dark-mode');
+    input.checked = false;
+    icon.textContent = '🌞';
+  }
+  input.addEventListener('change', function() {
+    if (input.checked) {
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('ailo-theme', 'dark');
+      icon.textContent = '🌚';
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('ailo-theme', 'light');
+      icon.textContent = '🌞';
+    }
+  });
+});
+</script> 

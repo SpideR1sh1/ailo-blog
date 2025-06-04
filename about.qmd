@@ -1,0 +1,46 @@
+---
+title: "About Me"
+---
+
+<div style="text-align: center; margin-bottom: 2em;">
+  <img src="about-image.png" alt="Your Name" style="max-width: 300px;">
+  <h1 style="margin-bottom: 0.2em;">Hi, I'm <span style="color: #337652;">Aayush Ghosh</span>!</h1>
+  <p style="font-size: 1.2em; color: #555;">[Your Tagline or Short Bio Here]</p>
+</div>
+
+## 👋 About Me
+
+- **Location:** [Your City, Country]
+- **Pronouns:** [Your Pronouns]
+- **Current Role:** [Your Job Title or Student Status]
+- **Background:** [A few sentences about your background, interests, or what brought you here]
+
+## 🛠️ Skills & Interests
+
+- [Skill or Interest 1]
+- [Skill or Interest 2]
+- [Skill or Interest 3]
+- [Add more as needed]
+
+## 🚀 What I'm Working On
+
+- [Project or goal 1]
+- [Project or goal 2]
+- [What excites you right now?]
+
+## 🌱 Fun Facts
+
+- [Fun fact 1]
+- [Fun fact 2]
+- [Fun fact 3]
+
+## 📫 Get in Touch
+
+- **Email:** rishi.gh2002\@email.com
+- **GitHub:** [@SpideR1sh1]
+- **LinkedIn:** [Your LinkedIn URL]
+- **Other:** [Any other way to connect]
+
+---
+
+*Feel free to fill in the blanks and make this page your own!*

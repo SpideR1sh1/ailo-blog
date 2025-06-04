@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "ailo-blog"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: glossary.qmd
+        text: Glossary
+    logo: AILO.png
+    tools:
+      - html: navbar-toggle.html
+  page-footer: 
+    left: "© 2024 AILO Blog"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    include-in-header: inject-toggle.html
+
+
+

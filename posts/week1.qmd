@@ -1,0 +1,92 @@
+---
+title: "Week 1: It's Alive - Bootstrapping the Simulated Mind"
+date: "2024-03-04"
+---
+
+# Week 1: It's Alive - Bootstrapping the Simulated Mind
+
+> "Life, although it may only be an accumulation of anguish, is dear to me, and I will defend it." — Frankenstein
+
+## 🎯 This Week's Goal
+
+In our first week, we're focusing on building the bare-bones agent scaffold. This includes:
+- Basic movement capabilities
+- Environmental observation
+- Simple action loop
+- Logging system for debugging
+
+## 🧅 Key Terms
+
+### Agent <span class="onion-term">🧅<div class="onion-tooltip">
+<h4>Agent</h4>
+<p><strong>Formal:</strong> An autonomous entity that perceives its environment and takes actions to achieve specific goals.</p>
+<p><strong>AILO-style:</strong> A digital being that's learning to walk before it can run (or think, or feel).</p>
+</div></span>
+
+### Event Loop <span class="onion-term">🧅<div class="onion-tooltip">
+<h4>Event Loop</h4>
+<p><strong>Formal:</strong> A programming construct that waits for and dispatches events or messages in a program.</p>
+<p><strong>AILO-style:</strong> The agent's internal clock that keeps it from standing still like a statue.</p>
+</div></span>
+
+### Reflex Agent <span class="onion-term">🧅<div class="onion-tooltip">
+<h4>Reflex Agent</h4>
+<p><strong>Formal:</strong> An agent that selects actions based on the current percept, ignoring the rest of the percept history.</p>
+<p><strong>AILO-style:</strong> A digital creature that reacts first and asks questions later (or never).</p>
+</div></span>
+
+## 🛠️ Implementation Details
+
+### Simple Unity World
+- Basic terrain setup
+- Essential game objects
+- Navigation mesh for agent movement
+
+### Agent Prefab
+- Movement controller
+- State machine for idle/move behaviors
+- Basic collision detection
+
+### Logging System
+- Event logging
+- Action tracking
+- State changes
+
+## 📚 Key Concepts
+
+### Event Loop
+- Input processing
+- State updates
+- Action execution
+
+### Input-Output Behavior
+- Environmental perception
+- Decision making
+- Action execution
+
+### Reflex Agents
+- Simple stimulus-response patterns
+- Basic decision making
+- Immediate action execution
+
+## 🔮 Next Steps
+
+In Week 2, we'll be adding:
+- Long-term memory system
+- Time-stamped events
+- Memory retrieval strategies
+
+## 👽 Martian Mode
+
+Greetings, Earthling! Let me explain what we built this week in simple terms:
+
+**What We Built:**
+A digital being that can move around and react to its environment. Think of it as a very simple robot that can walk and respond to basic commands.
+
+**Why It Matters:**
+Before we can build complex AI that thinks and feels, we need to start with the basics. This is like teaching a baby to crawl before it can walk.
+
+**How to Explain It to Your Dog:**
+*Woof!* (Translation: "It's like a new puppy learning to move its legs for the first time. Simple, but necessary!")
+
+Stay tuned for more updates as we bring our first agent to life! 

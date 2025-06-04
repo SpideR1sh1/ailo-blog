@@ -1,0 +1,121 @@
+/* css styles */
+
+.onion-term {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.onion-term .onion-tooltip {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 135%;
+}
+
+.onion-tooltip {
+  visibility: hidden;
+  width: 240px;
+  background-color: #222;
+  color: #fff;
+  text-align: left;
+  border-radius: 8px;
+  padding: 14px 16px 12px 16px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.25s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  font-size: 0.98em;
+  line-height: 1.5;
+}
+
+.onion-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.onion-term:hover .onion-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.onion-tooltip h4 {
+  margin: 0 0 8px 0;
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 1.08em;
+}
+
+.onion-tooltip p {
+  margin: 6px 0 0 0;
+  font-size: 0.97em;
+  font-weight: normal;
+  color: #fff;
+}
+
+.onion-tooltip p strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* Light/Dark mode toggle styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 22px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #87ceeb; /* sky blue for day */
+  transition: .4s;
+  border-radius: 22px;
+}
+
+body.dark-mode .slider {
+  background-color: #a259e6; /* purple for night */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #222;
+}
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+body.dark-mode {
+  background: #181818 !important;
+  color: #e0e0e0 !important;
+}
+body.dark-mode .navbar, body.dark-mode .nav {
+  background: #232323 !important;
+}
+body.dark-mode a { color: #ffd700; }
+body.dark-mode .onion-tooltip { background: #333; color: #ffd700; }
+
+body {
+  background: #fffced !important;
+}

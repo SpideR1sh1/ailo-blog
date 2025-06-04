@@ -1,0 +1,268 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ailo-blog",
+    "section": "",
+    "text": "Welcome to my blog, a storytelling-engineering journal that explores the strange, emotional, and sometimes unpredictable world of simulated intelligence. This blog documents the design of increasingly complex AI agents — not as models in a paper, but as characters in a world. You will hopefully see my successes, but more often you will see my failures.\nEach post follows a weekly build cycle with:"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "[Your Tagline or Short Bio Here]"
+  },
+  {
+    "objectID": "index.html#core-goal",
+    "href": "index.html#core-goal",
+    "title": "ailo-blog",
+    "section": "🎯 Core Goal",
+    "text": "🎯 Core Goal\nTo build agents that don’t just work — they remember, feel, and change. This blog tracks that evolution, combining:\n\nResearch-inspired engineering\nWeekly storytelling\nExperimental system design"
+  },
+  {
+    "objectID": "index.html#tools",
+    "href": "index.html#tools",
+    "title": "ailo-blog",
+    "section": "🧰 Tools",
+    "text": "🧰 Tools\n\n\n\nStack\nPurpose\n\n\n\n\n🛠 Unity\nGame simulation & agent environment\n\n\n🧪 Python\nOptional backend logic & memory manipulation\n\n\n📚 Quarto\nBlog generation, visual embeds, interactivity\n\n\n🌐 OpenAI/HuggingFace\nLLMs used in later phases (Phase 2 onward)"
+  },
+  {
+    "objectID": "index.html#current-phase",
+    "href": "index.html#current-phase",
+    "title": "ailo-blog",
+    "section": "📆 Current Phase",
+    "text": "📆 Current Phase\n\n🧠 Phase 1: Simulated Mind in a Game World\nA 12-week experiment in designing agents that live, reflect, and grow inside a Stardew Valley–style sandbox. Each week introduces a new layer of mind — from walking to memory to personality drift.\n\n\n🗺️ Latest Progress\n✅ Week 1 – “It’s Alive: Bootstrapping the Simulated Mind” (Coming Soon) - Building the bare-bones agent scaffold - Movement, observation, and basic loop - Event loop and reflex agents"
+  },
+  {
+    "objectID": "index.html#future-vision",
+    "href": "index.html#future-vision",
+    "title": "AILO Blog",
+    "section": "",
+    "text": "This project will evolve through multiple phases: 1. Phase 1: Simulated Mind in a Game World (Current) 2. Phase 2: LLM Debugger 3. Phase 3: Public Portfolio/Demo\nStay tuned for weekly updates as we bring these AI agents to life!"
+  },
+  {
+    "objectID": "about.html#our-mission",
+    "href": "about.html#our-mission",
+    "title": "About",
+    "section": "🎯 Our Mission",
+    "text": "🎯 Our Mission\nTo create a sandbox simulation where AI agents can: - Plan and execute complex actions - Form and maintain memories - Experience and express emotions - Develop unique personalities - Interact meaningfully with other agents"
+  },
+  {
+    "objectID": "about.html#our-tools",
+    "href": "about.html#our-tools",
+    "title": "About",
+    "section": "🛠️ Our Tools",
+    "text": "🛠️ Our Tools\n\nUnity: Our game engine of choice for creating the sandbox environment\nPython: For prototyping AI logic and behavior systems\nQuarto: For documenting our journey and sharing insights"
+  },
+  {
+    "objectID": "about.html#the-journey",
+    "href": "about.html#the-journey",
+    "title": "About",
+    "section": "📚 The Journey",
+    "text": "📚 The Journey\nWe’re documenting our progress through weekly blog posts, each focusing on a specific aspect of agent development:\n\nBasic agent scaffolding\nMemory systems\nEmotional modeling\nPlanning capabilities\nPersonality emergence\nTheory of mind\nCognitive dissonance\nMemory evolution\nImagination and simulation\nSelf-modeling\nNarrative generation\nIdentity formation"
+  },
+  {
+    "objectID": "about.html#get-involved",
+    "href": "about.html#get-involved",
+    "title": "About",
+    "section": "🤝 Get Involved",
+    "text": "🤝 Get Involved\nFollow along as we build these simulated minds from the ground up. Each week brings new insights, challenges, and breakthroughs in our quest to create truly intelligent agents.\nStay tuned for our first post: “It’s Alive: Bootstrapping the Simulated Mind”!"
+  },
+  {
+    "objectID": "index.html#what-the-onion-means",
+    "href": "index.html#what-the-onion-means",
+    "title": "ailo-blog",
+    "section": "🧅 What the Onion Means",
+    "text": "🧅 What the Onion Means\nWherever you see this icon → 🧅 That marks a layered word: something that needs peeling.\nHover over the onion icon after a word to see its layered meaning!\nThese terms will have: - The official definition - And my AILOcard-style version — honest, funny, and functional\nExample: Belief 🧅\n\n\nBelief\n\n\nFormal: A structured mental representation about the world held with some confidence.\n\n\nAILO-style: A hunch the agent will probably act on… even if it’s wrong.\n\n\n\nThese definitions live in the glossary and appear in hover-tooltips throughout posts."
+  },
+  {
+    "objectID": "index.html#who-is-the-martian",
+    "href": "index.html#who-is-the-martian",
+    "title": "ailo-blog",
+    "section": "👽 Who Is the Martian?",
+    "text": "👽 Who Is the Martian?\nBack in middle school, my Physics teacher told me the only way to understand something was to pretend you were explaining it to a man from Mars.\nI’ve never forgotten that.\nAt the end of every post you’ll find a Martian Mode 👽. This is a plain-language TLDR written for someone from another world — or another field.\nIt breaks down: - What I built - Why it matters - How to explain it to your obtuse martian friend\nBecause interpretability isn’t just for the models — it’s for the humans, too."
+  },
+  {
+    "objectID": "index.html#future-phases",
+    "href": "index.html#future-phases",
+    "title": "ailo-blog",
+    "section": "🌱 Future Phases",
+    "text": "🌱 Future Phases\nThis isn’t just a one-off experiment. AILO unfolds across three interconnected phases:\n\n\n\n\n\n\n\n\n\n🧭 Phase\n🧠 Title\n🔬 Focus\n👽 Simple explanation\n\n\n\n\n🧠Phase 1\nSimulated Mind in a Game World\nAgents, memory, mood, identity (Unity-based)\nHow intelligence is made — like growing a brain one behavior at a time\n\n\n🔍Phase 2\nLLM Debugger\nVisual tooling for understanding how LLMs think\nHow intelligence thinks — and how to actually look inside its head\n\n\n🧪Phase 3\nQuantum-Native Reasoning\nResearch into quantum-aligned reasoning systems\nHow intelligence can be redefined — with math that doesn’t follow our rules"
+  },
+  {
+    "objectID": "index.html#why-this-blog-exists",
+    "href": "index.html#why-this-blog-exists",
+    "title": "ailo-blog",
+    "section": "🌀 Why This Blog Exists",
+    "text": "🌀 Why This Blog Exists\nThis isn’t a devlog. It’s not a textbook. It’s a research-meets-narrative experiment — an engineering novel, one post at a time.\nYou’ll see code.\nYou’ll meet characters.\nAnd you’ll slowly forget whether the agent is simulating a mind — or you are."
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "AILO Glossary",
+    "section": "",
+    "text": "Welcome to the AILO glossary, where we peel back the layers of AI terminology to reveal both the formal definitions and our more approachable AILO-style interpretations.\n\n\n\n\n\nFormal: An autonomous entity that perceives its environment and takes actions to achieve specific goals.\nAILO-style: A digital being that’s learning to walk before it can run (or think, or feel).\n\n\n\n\n\n\n\n\nFormal: A programming construct that waits for and dispatches events or messages in a program.\nAILO-style: The agent’s internal clock that keeps it from standing still like a statue.\n\n\n\n\n\n\n\n\nFormal: An agent that selects actions based on the current percept, ignoring the rest of the percept history.\nAILO-style: A digital creature that reacts first and asks questions later (or never).\n\n\n\n\n\n\n\n\nFormal: A structured mental representation about the world held with some confidence.\nAILO-style: A hunch the agent will probably act on… even if it’s wrong.\n\n\nThis glossary will grow as we add more layers to our simulated minds. Each term marked with 🧅 has both a formal definition and an AILO-style interpretation that makes it more approachable and fun."
+  },
+  {
+    "objectID": "glossary.html#a",
+    "href": "glossary.html#a",
+    "title": "AILO Glossary",
+    "section": "",
+    "text": "Formal: An autonomous entity that perceives its environment and takes actions to achieve specific goals.\nAILO-style: A digital being that’s learning to walk before it can run (or think, or feel)."
+  },
+  {
+    "objectID": "glossary.html#e",
+    "href": "glossary.html#e",
+    "title": "AILO Glossary",
+    "section": "",
+    "text": "Formal: A programming construct that waits for and dispatches events or messages in a program.\nAILO-style: The agent’s internal clock that keeps it from standing still like a statue."
+  },
+  {
+    "objectID": "glossary.html#r",
+    "href": "glossary.html#r",
+    "title": "AILO Glossary",
+    "section": "",
+    "text": "Formal: An agent that selects actions based on the current percept, ignoring the rest of the percept history.\nAILO-style: A digital creature that reacts first and asks questions later (or never)."
+  },
+  {
+    "objectID": "glossary.html#b",
+    "href": "glossary.html#b",
+    "title": "AILO Glossary",
+    "section": "",
+    "text": "Formal: A structured mental representation about the world held with some confidence.\nAILO-style: A hunch the agent will probably act on… even if it’s wrong.\n\n\nThis glossary will grow as we add more layers to our simulated minds. Each term marked with 🧅 has both a formal definition and an AILO-style interpretation that makes it more approachable and fun."
+  },
+  {
+    "objectID": "posts/week1.html",
+    "href": "posts/week1.html",
+    "title": "Week 1: It’s Alive - Bootstrapping the Simulated Mind",
+    "section": "",
+    "text": "“Life, although it may only be an accumulation of anguish, is dear to me, and I will defend it.” — Frankenstein\n\n\n\nIn our first week, we’re focusing on building the bare-bones agent scaffold. This includes: - Basic movement capabilities - Environmental observation - Simple action loop - Logging system for debugging\n\n\n\n### Agent 🧅\n\n\n\nFormal: An autonomous entity that perceives its environment and takes actions to achieve specific goals.\n\n\nAILO-style: A digital being that’s learning to walk before it can run (or think, or feel).\n\n\n\n### Event Loop 🧅\n\n\n\nFormal: A programming construct that waits for and dispatches events or messages in a program.\n\n\nAILO-style: The agent’s internal clock that keeps it from standing still like a statue.\n\n\n\n### Reflex Agent 🧅\n\n\n\nFormal: An agent that selects actions based on the current percept, ignoring the rest of the percept history.\n\n\nAILO-style: A digital creature that reacts first and asks questions later (or never).\n\n\n\n\n\n\n\n\n\nBasic terrain setup\nEssential game objects\nNavigation mesh for agent movement\n\n\n\n\n\nMovement controller\nState machine for idle/move behaviors\nBasic collision detection\n\n\n\n\n\nEvent logging\nAction tracking\nState changes\n\n\n\n\n\n\n\n\nInput processing\nState updates\nAction execution\n\n\n\n\n\nEnvironmental perception\nDecision making\nAction execution\n\n\n\n\n\nSimple stimulus-response patterns\nBasic decision making\nImmediate action execution\n\n\n\n\n\nIn Week 2, we’ll be adding: - Long-term memory system - Time-stamped events - Memory retrieval strategies\n\n\n\nGreetings, Earthling! Let me explain what we built this week in simple terms:\nWhat We Built: A digital being that can move around and react to its environment. Think of it as a very simple robot that can walk and respond to basic commands.\nWhy It Matters: Before we can build complex AI that thinks and feels, we need to start with the basics. This is like teaching a baby to crawl before it can walk.\nHow to Explain It to Your Dog: Woof! (Translation: “It’s like a new puppy learning to move its legs for the first time. Simple, but necessary!”)\nStay tuned for more updates as we bring our first agent to life!"
+  },
+  {
+    "objectID": "posts/week1.html#this-weeks-goal",
+    "href": "posts/week1.html#this-weeks-goal",
+    "title": "Week 1: It’s Alive - Bootstrapping the Simulated Mind",
+    "section": "",
+    "text": "In our first week, we’re focusing on building the bare-bones agent scaffold. This includes: - Basic movement capabilities - Environmental observation - Simple action loop - Logging system for debugging"
+  },
+  {
+    "objectID": "posts/week1.html#key-terms",
+    "href": "posts/week1.html#key-terms",
+    "title": "Week 1: It’s Alive - Bootstrapping the Simulated Mind",
+    "section": "",
+    "text": "### Agent 🧅\n\n\n\nFormal: An autonomous entity that perceives its environment and takes actions to achieve specific goals.\n\n\nAILO-style: A digital being that’s learning to walk before it can run (or think, or feel).\n\n\n\n### Event Loop 🧅\n\n\n\nFormal: A programming construct that waits for and dispatches events or messages in a program.\n\n\nAILO-style: The agent’s internal clock that keeps it from standing still like a statue.\n\n\n\n### Reflex Agent 🧅\n\n\n\nFormal: An agent that selects actions based on the current percept, ignoring the rest of the percept history.\n\n\nAILO-style: A digital creature that reacts first and asks questions later (or never)."
+  },
+  {
+    "objectID": "posts/week1.html#implementation-details",
+    "href": "posts/week1.html#implementation-details",
+    "title": "Week 1: It’s Alive - Bootstrapping the Simulated Mind",
+    "section": "",
+    "text": "Basic terrain setup\nEssential game objects\nNavigation mesh for agent movement\n\n\n\n\n\nMovement controller\nState machine for idle/move behaviors\nBasic collision detection\n\n\n\n\n\nEvent logging\nAction tracking\nState changes"
+  },
+  {
+    "objectID": "posts/week1.html#key-concepts",
+    "href": "posts/week1.html#key-concepts",
+    "title": "Week 1: It’s Alive - Bootstrapping the Simulated Mind",
+    "section": "",
+    "text": "Input processing\nState updates\nAction execution\n\n\n\n\n\nEnvironmental perception\nDecision making\nAction execution\n\n\n\n\n\nSimple stimulus-response patterns\nBasic decision making\nImmediate action execution"
+  },
+  {
+    "objectID": "posts/week1.html#next-steps",
+    "href": "posts/week1.html#next-steps",
+    "title": "Week 1: It’s Alive - Bootstrapping the Simulated Mind",
+    "section": "",
+    "text": "In Week 2, we’ll be adding: - Long-term memory system - Time-stamped events - Memory retrieval strategies"
+  },
+  {
+    "objectID": "posts/week1.html#martian-mode",
+    "href": "posts/week1.html#martian-mode",
+    "title": "Week 1: It’s Alive - Bootstrapping the Simulated Mind",
+    "section": "",
+    "text": "Greetings, Earthling! Let me explain what we built this week in simple terms:\nWhat We Built: A digital being that can move around and react to its environment. Think of it as a very simple robot that can walk and respond to basic commands.\nWhy It Matters: Before we can build complex AI that thinks and feels, we need to start with the basics. This is like teaching a baby to crawl before it can walk.\nHow to Explain It to Your Dog: Woof! (Translation: “It’s like a new puppy learning to move its legs for the first time. Simple, but necessary!”)\nStay tuned for more updates as we bring our first agent to life!"
+  },
+  {
+    "objectID": "about.html#what-is-ailo",
+    "href": "about.html#what-is-ailo",
+    "title": "About",
+    "section": "",
+    "text": "AILO stands for AI is Like Onions — and this blog is an attempt to prove it.\nIt’s a solo engineering + research project that explores the construction of simulated minds inside a 2D sandbox world. Inspired by Stardew Valley, cognitive science, and interpretability research, AILO blends: - Code - Narrative - Emotion - And the occasional bug-ridden farm tool."
+  },
+  {
+    "objectID": "about.html#mission-give-the-agent-a-soul-or-at-least-a-mood-bar",
+    "href": "about.html#mission-give-the-agent-a-soul-or-at-least-a-mood-bar",
+    "title": "About",
+    "section": "",
+    "text": "This isn’t just about making an AI that works — it’s about building one that: - Plans with purpose - Remembers what mattered - Feels when ignored - Reflects on its regrets - Changes with experience\nEach week, the agent gets a new cognitive upgrade. Each week, we test if it breaks everything."
+  },
+  {
+    "objectID": "about.html#tools-behind-the-curtain",
+    "href": "about.html#tools-behind-the-curtain",
+    "title": "About",
+    "section": "",
+    "text": "Tool\nUse\n\n\n\n\nUnity\nVisual sandbox + behavior scaffolding\n\n\nPython\nLogic prototyping + backend reflection modules\n\n\nQuarto\nThe blog engine — because science deserves styling\n\n\nOpenAI / HuggingFace\nLLMs for future debugging, language reflection, and narration in Phase 2+"
+  },
+  {
+    "objectID": "about.html#the-journey-aka-the-12-layers-of-onionboys-mind",
+    "href": "about.html#the-journey-aka-the-12-layers-of-onionboys-mind",
+    "title": "About",
+    "section": "",
+    "text": "Each post builds toward the next: - Agent Bootstrapping - Memory Systems - Reflection - Emotional State Modeling - Planning - Personality Emergence - Belief Modeling (Theory of Mind) - Memory Divergence - Imagination & Simulation - Self-Modeling - Emotional Storytelling - Identity Evolution\nSome weeks are wins. Some weeks are wild regressions. That’s the point."
+  },
+  {
+    "objectID": "about.html#what-the-onion-symbol-means",
+    "href": "about.html#what-the-onion-symbol-means",
+    "title": "About",
+    "section": "",
+    "text": "Wherever you see the 🧅 symbol, that’s a layered term: a word that deserves both a proper definition and a weird-but-honest one.\nBelief 🧅 - Official: A structured mental representation held with some confidence. - AILO-style: A guess the agent probably acts on — even if it’s based on a glitchy fence encounter.\nCheck the 🧅Glossary for all of them."
+  },
+  {
+    "objectID": "about.html#what-is-martian-mode",
+    "href": "about.html#what-is-martian-mode",
+    "title": "About",
+    "section": "",
+    "text": "My physics teacher used to say: &gt; “You don’t understand something unless you can explain it to a man from Mars.”\nSo at the end of every post, you’ll find a 👽 Martian Mode: A plain-language TLDR of that week’s build, told simply and metaphorically — no jargon allowed."
+  },
+  {
+    "objectID": "about.html#follow-along-or-just-skim-the-chaos",
+    "href": "about.html#follow-along-or-just-skim-the-chaos",
+    "title": "About",
+    "section": "",
+    "text": "This blog isn’t just a log of what I built — it’s a reflection of how I think. If you care about AI, storytelling, memory, or strange little agents wandering around in circles… you’re in the right place.\nEvery week, I publish: - A post with narrative + code - Screenshots or demos - Research hooks - 🧅 Definitions and 👽 Martian summaries\nComing up first: “It’s Alive: Bootstrapping the Simulated Mind”"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About Me",
+    "section": "👋 About Me",
+    "text": "👋 About Me\n\nLocation: [Your City, Country]\nPronouns: [Your Pronouns]\nCurrent Role: [Your Job Title or Student Status]\nBackground: [A few sentences about your background, interests, or what brought you here]"
+  },
+  {
+    "objectID": "about.html#skills-interests",
+    "href": "about.html#skills-interests",
+    "title": "About Me",
+    "section": "🛠️ Skills & Interests",
+    "text": "🛠️ Skills & Interests\n\n[Skill or Interest 1]\n[Skill or Interest 2]\n[Skill or Interest 3]\n[Add more as needed]"
+  },
+  {
+    "objectID": "about.html#what-im-working-on",
+    "href": "about.html#what-im-working-on",
+    "title": "About Me",
+    "section": "🚀 What I’m Working On",
+    "text": "🚀 What I’m Working On\n\n[Project or goal 1]\n[Project or goal 2]\n[What excites you right now?]"
+  },
+  {
+    "objectID": "about.html#fun-facts",
+    "href": "about.html#fun-facts",
+    "title": "About Me",
+    "section": "🌱 Fun Facts",
+    "text": "🌱 Fun Facts\n\n[Fun fact 1]\n[Fun fact 2]\n[Fun fact 3]"
+  },
+  {
+    "objectID": "about.html#get-in-touch",
+    "href": "about.html#get-in-touch",
+    "title": "About Me",
+    "section": "📫 Get in Touch",
+    "text": "📫 Get in Touch\n\nEmail: [your@email.com]\nTwitter: [@yourhandle]\nLinkedIn: [Your LinkedIn URL]\nOther: [Any other way to connect]\n\n\nFeel free to fill in the blanks and make this page your own!"
+  }
+]
