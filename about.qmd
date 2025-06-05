@@ -2,18 +2,19 @@
 title: "About Me"
 ---
 
-<div style="text-align: center; margin-bottom: 2em;">
-  <img src="about-image.png" alt="Your Name" style="max-width: 300px;">
-  <h1 style="margin-bottom: 0.2em;">Hi, I'm <span style="color: #337652;">Aayush Ghosh</span>!</h1>
-  <p style="font-size: 1.2em; color: #555;">[Your Tagline or Short Bio Here]</p>
+<div style="position: relative; height: 300px; margin-bottom: 2em;">
+  <img src="about-image.png" alt="Your Name" style="max-width: 500px; position: absolute; left: 50%; top: 0; transform: translateX(-50%);" class="about-image-light">
+  <img src="about-image-night.png" alt="Your Name Night" style="max-width: 500px; position: absolute; left: 50%; top: 0; transform: translateX(-50%);" class="about-image-dark">
 </div>
+<h1 style="margin-bottom: 0.2em; text-align: center;">Hi, I'm <span style="color: #337652;">Aayush Ghosh</span>!</h1>
+<p style="font-size: 1.2em; color: #555; text-align: center;">[Your Tagline or Short Bio Here]</p>
 
 ## 👋 About Me
 
-- **Location:** [Your City, Country]
-- **Pronouns:** [Your Pronouns]
-- **Current Role:** [Your Job Title or Student Status]
-- **Background:** [A few sentences about your background, interests, or what brought you here]
+- **Location:** USA
+- **Pronouns:** he/him
+- **Current Role:** Learner
+- **Background:** I am a student @ Purdue University, majoring in Computer Science. Currently working with or learning Quantitative Finance, Quantum Physics, Quantum Computing, and Artificial Intelligence.
 
 ## 🛠️ Skills & Interests
 
@@ -37,9 +38,8 @@ title: "About Me"
 ## 📫 Get in Touch
 
 - **Email:** rishi.gh2002\@email.com
-- **GitHub:** [@SpideR1sh1]
-- **LinkedIn:** [Your LinkedIn URL]
-- **Other:** [Any other way to connect]
+- **GitHub:** SpideR1sh1
+- **LinkedIn:** spiderishi
 
 ---
 

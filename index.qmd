@@ -8,11 +8,11 @@ Welcome to my blog, a storytelling-engineering journal that explores the strange
 
 Each post follows a weekly build cycle with:
 
-- 🧠 new cognitive capabilities (memory, planning, belief, etc.)
-- 🎮 playable sandbox simulations (built in Unity)
-- ✍️ reflective writing that blends code, metaphor, and narrative
+- new cognitive capabilities (memory, planning, belief, etc.)
+- playable sandbox simulations (built in Unity)
+- reflective writing that blends code, metaphor, and narrative
 
-## 🎯 Core Goal
+## Core Goal
 
 To build agents that don't just work — they remember, feel, and change.
 This blog tracks that evolution, combining:
@@ -23,7 +23,7 @@ This blog tracks that evolution, combining:
 
 ## 📆 Current Phase
 
-### 🧠 Phase 1: Simulated Mind in a Game World
+### Phase 1: Simulated Mind in a Game World
 
 A 12-week experiment in designing agents that live, reflect, and grow inside a Stardew Valley–style sandbox. Each week introduces a new layer of mind — from walking to memory to personality drift.
 
@@ -34,14 +34,14 @@ A 12-week experiment in designing agents that live, reflect, and grow inside a S
 - Movement, observation, and basic loop
 - Event loop and reflex agents
 
-## 🧰 Tools
+## Tools
 
 | Stack | Purpose |
 |-------|---------|
-| 🛠 Unity | Game simulation & agent environment |
-| 🧪 Python | Optional backend logic & memory manipulation |
-| 📚 Quarto | Blog generation, visual embeds, interactivity |
-| 🌐 OpenAI/HuggingFace | LLMs used in later phases (Phase 2 onward) |
+| Unity | Game simulation & agent environment |
+| Python | Optional backend logic & memory manipulation |
+| Quarto | Blog generation, visual embeds, interactivity |
+| OpenAI/HuggingFace | LLMs used in later phases (Phase 2 onward) |
 
 ## 🧅 What the Onion Means
 
@@ -78,16 +78,16 @@ It breaks down:
 Because interpretability isn't just for the models — it's for the humans, too.
 
 
-## 🌱 Future Phases
+## Future Phases
 This isn't just a one-off experiment. AILO unfolds across three interconnected phases:
 
-| 🧭 Phase    | 🧠 Title                        | 🔬 Focus                                    | 👽 Simple explanation                                      |
+| Phase    | Title                        | Focus                                    | 👽 Simple explanation                                      |
 |----------------|----------------------------------|---------------------------------------------|-------------------------------------------------------------------------|
-| 🧠Phase 1 | Simulated Mind in a Game World   | Agents, memory, mood, identity (Unity-based)| How intelligence is made — like growing a brain one behavior at a time   |
-| 🔍Phase 2 | LLM Debugger                     | Visual tooling for understanding how LLMs think| How intelligence thinks — and how to actually look inside its head       |
-| 🧪Phase 3 | Quantum-Native Reasoning         | Research into quantum-aligned reasoning systems| How intelligence can be redefined — with math that doesn't follow our rules |
+|Phase 1 | Simulated Mind in a Game World   | Agents, memory, mood, identity (Unity-based)| How intelligence is made — like growing a brain one behavior at a time   |
+| Phase 2 | LLM Debugger                     | Visual tooling for understanding how LLMs think| How intelligence thinks — and how to actually look inside its head       |
+| Phase 3 | Quantum-Native Reasoning         | Research into quantum-aligned reasoning systems| How intelligence can be redefined — with math that doesn't follow our rules |
 
-## 🌀 Why This Blog Exists
+## Why This Blog Exists
 
 This isn't a devlog. It's not a textbook.
 It's a research-meets-narrative experiment — an engineering novel, one post at a time.

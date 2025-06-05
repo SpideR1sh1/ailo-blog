@@ -95,7 +95,7 @@
     "href": "about.html#about-me",
     "title": "About Me",
     "section": "👋 About Me",
-    "text": "👋 About Me\n\nLocation: [Your City, Country]\nPronouns: [Your Pronouns]\nCurrent Role: [Your Job Title or Student Status]\nBackground: [A few sentences about your background, interests, or what brought you here]"
+    "text": "👋 About Me\n\nLocation: USA\nPronouns: he/him\nCurrent Role: Learner\nBackground: I am a student @ Purdue University, majoring in Computer Science. Currently working with or learning Quantitative Finance, Quantum Physics, Quantum Computing, and Artificial Intelligence."
   },
   {
     "objectID": "about.html#skills-interests",
@@ -123,62 +123,76 @@
     "href": "about.html#get-in-touch",
     "title": "About Me",
     "section": "📫 Get in Touch",
-    "text": "📫 Get in Touch\n\nEmail: rishi.gh2002@email.com\nGitHub: [@SpideR1sh1]\nLinkedIn: [Your LinkedIn URL]\nOther: [Any other way to connect]\n\n\nFeel free to fill in the blanks and make this page your own!"
+    "text": "📫 Get in Touch\n\nEmail: rishi.gh2002@email.com\nGitHub: SpideR1sh1\nLinkedIn: spiderishi\n\n\nFeel free to fill in the blanks and make this page your own!"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "ailo-blog",
+    "title": "AILO Blog",
     "section": "",
     "text": "Welcome to my blog, a storytelling-engineering journal that explores the strange, emotional, and sometimes unpredictable world of simulated intelligence. This blog documents the design of increasingly complex AI agents — not as models in a paper, but as characters in a world. You will hopefully see my successes, but more often you will see my failures.\nEach post follows a weekly build cycle with:"
   },
   {
     "objectID": "index.html#core-goal",
     "href": "index.html#core-goal",
-    "title": "ailo-blog",
-    "section": "🎯 Core Goal",
-    "text": "🎯 Core Goal\nTo build agents that don’t just work — they remember, feel, and change. This blog tracks that evolution, combining:\n\nResearch-inspired engineering\nWeekly storytelling\nExperimental system design"
+    "title": "AILO Blog",
+    "section": "Core Goal",
+    "text": "Core Goal\nTo build agents that don’t just work — they remember, feel, and change. This blog tracks that evolution, combining:\n\nResearch-inspired engineering\nWeekly storytelling\nExperimental system design"
   },
   {
     "objectID": "index.html#current-phase",
     "href": "index.html#current-phase",
-    "title": "ailo-blog",
+    "title": "AILO Blog",
     "section": "📆 Current Phase",
-    "text": "📆 Current Phase\n\n🧠 Phase 1: Simulated Mind in a Game World\nA 12-week experiment in designing agents that live, reflect, and grow inside a Stardew Valley–style sandbox. Each week introduces a new layer of mind — from walking to memory to personality drift.\n\n\n🗺️ Latest Progress\n✅ Week 1 – “It’s Alive: Bootstrapping the Simulated Mind” (Coming Soon) - Building the bare-bones agent scaffold - Movement, observation, and basic loop - Event loop and reflex agents"
+    "text": "📆 Current Phase\n\nPhase 1: Simulated Mind in a Game World\nA 12-week experiment in designing agents that live, reflect, and grow inside a Stardew Valley–style sandbox. Each week introduces a new layer of mind — from walking to memory to personality drift.\n\n\n🗺️ Latest Progress\n✅ Week 1 – “It’s Alive: Bootstrapping the Simulated Mind” (Coming Soon) - Building the bare-bones agent scaffold - Movement, observation, and basic loop - Event loop and reflex agents"
   },
   {
     "objectID": "index.html#tools",
     "href": "index.html#tools",
-    "title": "ailo-blog",
-    "section": "🧰 Tools",
-    "text": "🧰 Tools\n\n\n\nStack\nPurpose\n\n\n\n\n🛠 Unity\nGame simulation & agent environment\n\n\n🧪 Python\nOptional backend logic & memory manipulation\n\n\n📚 Quarto\nBlog generation, visual embeds, interactivity\n\n\n🌐 OpenAI/HuggingFace\nLLMs used in later phases (Phase 2 onward)"
+    "title": "AILO Blog",
+    "section": "Tools",
+    "text": "Tools\n\n\n\nStack\nPurpose\n\n\n\n\nUnity\nGame simulation & agent environment\n\n\nPython\nOptional backend logic & memory manipulation\n\n\nQuarto\nBlog generation, visual embeds, interactivity\n\n\nOpenAI/HuggingFace\nLLMs used in later phases (Phase 2 onward)"
   },
   {
     "objectID": "index.html#what-the-onion-means",
     "href": "index.html#what-the-onion-means",
-    "title": "ailo-blog",
+    "title": "AILO Blog",
     "section": "🧅 What the Onion Means",
     "text": "🧅 What the Onion Means\nWherever you see this icon → 🧅 That marks a layered word: something that needs peeling.\nHover over the onion icon after a word to see its layered meaning!\nThese terms will have: - The official definition - And my AILOcard-style version — honest, funny, and functional\nExample: Belief 🧅\n\n\nBelief\n\n\nFormal: A structured mental representation about the world held with some confidence.\n\n\nAILO-style: A hunch the agent will probably act on… even if it’s wrong.\n\n\n\nThese definitions live in the glossary and appear in hover-tooltips throughout posts."
   },
   {
     "objectID": "index.html#who-is-the-martian",
     "href": "index.html#who-is-the-martian",
-    "title": "ailo-blog",
+    "title": "AILO Blog",
     "section": "👽 Who Is the Martian?",
     "text": "👽 Who Is the Martian?\nBack in middle school, my Physics teacher told me the only way to understand something was to pretend you were explaining it to a man from Mars.\nI’ve never forgotten that.\nAt the end of every post you’ll find a Martian Mode 👽. This is a plain-language TLDR written for someone from another world — or another field.\nIt breaks down: - What I built - Why it matters - How to explain it to your obtuse martian friend\nBecause interpretability isn’t just for the models — it’s for the humans, too."
   },
   {
     "objectID": "index.html#future-phases",
     "href": "index.html#future-phases",
-    "title": "ailo-blog",
-    "section": "🌱 Future Phases",
-    "text": "🌱 Future Phases\nThis isn’t just a one-off experiment. AILO unfolds across three interconnected phases:\n\n\n\n\n\n\n\n\n\n🧭 Phase\n🧠 Title\n🔬 Focus\n👽 Simple explanation\n\n\n\n\n🧠Phase 1\nSimulated Mind in a Game World\nAgents, memory, mood, identity (Unity-based)\nHow intelligence is made — like growing a brain one behavior at a time\n\n\n🔍Phase 2\nLLM Debugger\nVisual tooling for understanding how LLMs think\nHow intelligence thinks — and how to actually look inside its head\n\n\n🧪Phase 3\nQuantum-Native Reasoning\nResearch into quantum-aligned reasoning systems\nHow intelligence can be redefined — with math that doesn’t follow our rules"
+    "title": "AILO Blog",
+    "section": "Future Phases",
+    "text": "Future Phases\nThis isn’t just a one-off experiment. AILO unfolds across three interconnected phases:\n\n\n\n\n\n\n\n\n\nPhase\nTitle\nFocus\n👽 Simple explanation\n\n\n\n\nPhase 1\nSimulated Mind in a Game World\nAgents, memory, mood, identity (Unity-based)\nHow intelligence is made — like growing a brain one behavior at a time\n\n\nPhase 2\nLLM Debugger\nVisual tooling for understanding how LLMs think\nHow intelligence thinks — and how to actually look inside its head\n\n\nPhase 3\nQuantum-Native Reasoning\nResearch into quantum-aligned reasoning systems\nHow intelligence can be redefined — with math that doesn’t follow our rules"
   },
   {
     "objectID": "index.html#why-this-blog-exists",
     "href": "index.html#why-this-blog-exists",
-    "title": "ailo-blog",
-    "section": "🌀 Why This Blog Exists",
-    "text": "🌀 Why This Blog Exists\nThis isn’t a devlog. It’s not a textbook. It’s a research-meets-narrative experiment — an engineering novel, one post at a time.\nYou’ll see code.\nYou’ll meet characters.\nAnd you’ll slowly forget whether the agent is simulating a mind — or you are."
+    "title": "AILO Blog",
+    "section": "Why This Blog Exists",
+    "text": "Why This Blog Exists\nThis isn’t a devlog. It’s not a textbook. It’s a research-meets-narrative experiment — an engineering novel, one post at a time.\nYou’ll see code.\nYou’ll meet characters.\nAnd you’ll slowly forget whether the agent is simulating a mind — or you are."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "All Posts",
+    "section": "",
+    "text": "📝 All Blog Posts\n\n\n \n\n&lt;h2&gt;Week 1: It's Alive – Bootstrapping the Simulated Mind&lt;/h2&gt;"
+  },
+  {
+    "objectID": "index.html#martian-mode",
+    "href": "index.html#martian-mode",
+    "title": "🧅 AILO: AI is Like Onions",
+    "section": "👽 Martian Mode",
+    "text": "👽 Martian Mode\nAt the end of each post, Martian Mode 👽 provides a plain-language summary for broad accessibility."
   }
 ]

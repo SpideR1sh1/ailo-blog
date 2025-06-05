@@ -1,3 +1,14 @@
+<script>
+(function() {
+  try {
+    var saved = localStorage.getItem('ailo-theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark-mode');
+      document.body.classList.add('dark-mode');
+    }
+  } catch(e){}
+})();
+</script>
 <div id="theme-toggle-wrapper" style="display: flex; align-items: center; gap: 8px; height: 100%; padding-left: 12px;">
   <label class="switch" style="margin-bottom: 0;">
     <input type="checkbox" id="theme-toggle">

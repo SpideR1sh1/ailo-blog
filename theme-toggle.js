@@ -3,17 +3,24 @@ document.addEventListener('DOMContentLoaded', function() {
   const icon = document.getElementById('theme-icon');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const saved = localStorage.getItem('ailo-theme');
-  if (saved === 'dark' || (!saved && prefersDark)) {
-    document.body.classList.add('dark-mode');
-    toggle.checked = true;
-    icon.textContent = '🌚';
-  } else {
-    document.body.classList.remove('dark-mode');
-    toggle.checked = false;
-    icon.textContent = '🌞';
+
+  // Helper to add/remove background animation containers
+  function ensureBackgrounds() {
+    if (!document.querySelector('.sunbeams-bg')) {
+      const sunbeams = document.createElement('div');
+      sunbeams.className = 'sunbeams-bg';
+      document.body.appendChild(sunbeams);
+    }
+    if (!document.querySelector('.meteors-bg')) {
+      const meteors = document.createElement('div');
+      meteors.className = 'meteors-bg';
+      document.body.appendChild(meteors);
+    }
   }
-  toggle.addEventListener('change', function() {
-    if (toggle.checked) {
+  ensureBackgrounds();
+
+  function setTheme(isDark) {
+    if (isDark) {
       document.body.classList.add('dark-mode');
       localStorage.setItem('ailo-theme', 'dark');
       icon.textContent = '🌚';
@@ -22,5 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.setItem('ailo-theme', 'light');
       icon.textContent = '🌞';
     }
+  }
+
+  if (saved === 'dark' || (!saved && prefersDark)) {
+    setTheme(true);
+    toggle.checked = true;
+  } else {
+    setTheme(false);
+    toggle.checked = false;
+  }
+
+  toggle.addEventListener('change', function() {
+    setTheme(toggle.checked);
   });
 }); 

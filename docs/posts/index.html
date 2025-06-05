@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-03-04">
 
-<title>Week 1: It’s Alive - Bootstrapping the Simulated Mind – AILO Blog</title>
+<title>All Posts – AILO Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/index.html"> 
+    <a class="nav-link active" href="../posts/index.html" aria-current="page"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
@@ -120,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 1: It’s Alive - Bootstrapping the Simulated Mind</h1>
+<h1 class="title">All Posts</h1>
 </div>
 
 
@@ -128,12 +127,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 4, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -143,128 +136,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="week-1-its-alive---bootstrapping-the-simulated-mind" class="level1">
-<h1>Week 1: It’s Alive - Bootstrapping the Simulated Mind</h1>
-<blockquote class="blockquote">
-<p>“Life, although it may only be an accumulation of anguish, is dear to me, and I will defend it.” — Frankenstein</p>
-</blockquote>
-<section id="this-weeks-goal" class="level2">
-<h2 class="anchored" data-anchor-id="this-weeks-goal">🎯 This Week’s Goal</h2>
-<p>In our first week, we’re focusing on building the bare-bones agent scaffold. This includes: - Basic movement capabilities - Environmental observation - Simple action loop - Logging system for debugging</p>
-</section>
-<section id="key-terms" class="level2">
-<h2 class="anchored" data-anchor-id="key-terms">🧅 Key Terms</h2>
-### Agent <span class="onion-term">🧅
-<div class="onion-tooltip">
-<h4 class="anchored">
-Agent
-</h4>
-<p>
-<strong>Formal:</strong> An autonomous entity that perceives its environment and takes actions to achieve specific goals.
-</p>
-<p>
-<strong>AILO-style:</strong> A digital being that’s learning to walk before it can run (or think, or feel).
-</p>
+<section id="all-blog-posts" class="level1">
+<h1>📝 All Blog Posts</h1>
+<div class="post-cards-grid">
+<!-- Add new posts here in chronological order (oldest at top) -->
+<a class="post-card" href="../posts/week1.html"> <img src="week1.jpg" alt="Week 1" class="post-card-img">
+<div class="post-card-content">
+<pre><code>&lt;h2&gt;Week 1: It's Alive – Bootstrapping the Simulated Mind&lt;/h2&gt;</code></pre>
 </div>
-<p></p>
-### Event Loop <span class="onion-term">🧅
-<div class="onion-tooltip">
-<h4 class="anchored">
-Event Loop
-</h4>
-<p>
-<strong>Formal:</strong> A programming construct that waits for and dispatches events or messages in a program.
-</p>
-<p>
-<strong>AILO-style:</strong> The agent’s internal clock that keeps it from standing still like a statue.
-</p>
+</a><p><a class="post-card" href="../posts/week1.html"></a></p>
+<!-- Add more posts as you write them! -->
 </div>
-<p></p>
-### Reflex Agent <span class="onion-term">🧅
-<div class="onion-tooltip">
-<h4 class="anchored">
-Reflex Agent
-</h4>
-<p>
-<strong>Formal:</strong> An agent that selects actions based on the current percept, ignoring the rest of the percept history.
-</p>
-<p>
-<strong>AILO-style:</strong> A digital creature that reacts first and asks questions later (or never).
-</p>
-</div>
-<p></p>
-</span></span></span></section>
-<section id="implementation-details" class="level2">
-<h2 class="anchored" data-anchor-id="implementation-details">🛠️ Implementation Details</h2>
-<section id="simple-unity-world" class="level3">
-<h3 class="anchored" data-anchor-id="simple-unity-world">Simple Unity World</h3>
-<ul>
-<li>Basic terrain setup</li>
-<li>Essential game objects</li>
-<li>Navigation mesh for agent movement</li>
-</ul>
-</section>
-<section id="agent-prefab" class="level3">
-<h3 class="anchored" data-anchor-id="agent-prefab">Agent Prefab</h3>
-<ul>
-<li>Movement controller</li>
-<li>State machine for idle/move behaviors</li>
-<li>Basic collision detection</li>
-</ul>
-</section>
-<section id="logging-system" class="level3">
-<h3 class="anchored" data-anchor-id="logging-system">Logging System</h3>
-<ul>
-<li>Event logging</li>
-<li>Action tracking</li>
-<li>State changes</li>
-</ul>
-</section>
-</section>
-<section id="key-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts">📚 Key Concepts</h2>
-<section id="event-loop" class="level3">
-<h3 class="anchored" data-anchor-id="event-loop">Event Loop</h3>
-<ul>
-<li>Input processing</li>
-<li>State updates</li>
-<li>Action execution</li>
-</ul>
-</section>
-<section id="input-output-behavior" class="level3">
-<h3 class="anchored" data-anchor-id="input-output-behavior">Input-Output Behavior</h3>
-<ul>
-<li>Environmental perception</li>
-<li>Decision making</li>
-<li>Action execution</li>
-</ul>
-</section>
-<section id="reflex-agents" class="level3">
-<h3 class="anchored" data-anchor-id="reflex-agents">Reflex Agents</h3>
-<ul>
-<li>Simple stimulus-response patterns</li>
-<li>Basic decision making</li>
-<li>Immediate action execution</li>
-</ul>
-</section>
-</section>
-<section id="next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="next-steps">🔮 Next Steps</h2>
-<p>In Week 2, we’ll be adding: - Long-term memory system - Time-stamped events - Memory retrieval strategies</p>
-</section>
-<section id="martian-mode" class="level2">
-<h2 class="anchored" data-anchor-id="martian-mode">👽 Martian Mode</h2>
-<p>Greetings, Earthling! Let me explain what we built this week in simple terms:</p>
-<p><strong>What We Built:</strong> A digital being that can move around and react to its environment. Think of it as a very simple robot that can walk and respond to basic commands.</p>
-<p><strong>Why It Matters:</strong> Before we can build complex AI that thinks and feels, we need to start with the basics. This is like teaching a baby to crawl before it can walk.</p>
-<p><strong>How to Explain It to Your Dog:</strong> <em>Woof!</em> (Translation: “It’s like a new puppy learning to move its legs for the first time. Simple, but necessary!”)</p>
-<p>Stay tuned for more updates as we bring our first agent to life!</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
+<script>
+
+(function() {
+
+  try {
+
+    var saved = localStorage.getItem('ailo-theme');
+
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+
+      document.documentElement.classList.add('dark-mode');
+
+      document.body.classList.add('dark-mode');
+
+    }
+
+  } catch(e){}
+
+})();
+
+</script>
+
 <div id="theme-toggle-wrapper" style="display: flex; align-items: center; gap: 8px; height: 100%; padding-left: 12px;">
 
   <label class="switch" style="margin-bottom: 0;">
@@ -294,34 +203,6 @@ document.addEventListener('DOMContentLoaded', function() {
     navbar.appendChild(toggle);
 
   }
-
-  // Ensure background animation containers exist
-
-  function ensureBackgrounds() {
-
-    if (!document.querySelector('.sunbeams-bg')) {
-
-      const sunbeams = document.createElement('div');
-
-      sunbeams.className = 'sunbeams-bg';
-
-      document.body.appendChild(sunbeams);
-
-    }
-
-    if (!document.querySelector('.meteors-bg')) {
-
-      const meteors = document.createElement('div');
-
-      meteors.className = 'meteors-bg';
-
-      document.body.appendChild(meteors);
-
-    }
-
-  }
-
-  ensureBackgrounds();
 
   // Theme logic
 
@@ -375,9 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-</script>
-
-<script src="./background-anim.js"></script> 
+</script> 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

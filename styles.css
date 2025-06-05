@@ -79,12 +79,12 @@
   cursor: pointer;
   top: 0; left: 0; right: 0; bottom: 0;
   background-color: #87ceeb; /* sky blue for day */
-  transition: .4s;
+  transition: .4s, background-color 1.2s cubic-bezier(0.4,0,0.2,1);
   border-radius: 22px;
 }
 
 body.dark-mode .slider {
-  background-color: #a259e6; /* purple for night */
+  background-color: #a259e6 !important;
 }
 
 .slider:before {
@@ -118,4 +118,89 @@ body.dark-mode .onion-tooltip { background: #333; color: #ffd700; }
 
 body {
   background: #fffced !important;
+}
+
+.post-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  background: #fffced;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(51, 118, 82, 0.08);
+  text-decoration: none;
+  color: #222;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #e0e0d0;
+  overflow: hidden;
+  min-width: 0;
+}
+.post-card:hover {
+  box-shadow: 0 6px 24px rgba(51, 118, 82, 0.18);
+  transform: translateY(-2px) scale(1.01);
+  border-color: #337652;
+}
+.post-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #eee;
+  border-bottom: 1px solid #e0e0d0;
+}
+.post-card-content {
+  padding: 1.2em 1.2em 1em 1.2em;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.post-card-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  font-size: 1.15em;
+  color: #337652;
+}
+.post-card-content p {
+  margin: 0 0 0.5em 0;
+  color: #444;
+  flex: 1 1 auto;
+}
+.post-date {
+  font-size: 0.95em;
+  color: #888;
+  font-style: italic;
+  margin-top: auto;
+}
+
+/* Gradual background color transition */
+body, body.dark-mode {
+  transition: background 1.2s cubic-bezier(0.4,0,0.2,1), color 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Add smooth transition to navbar and nav for mode switching */
+.navbar, .nav {
+  transition: background 1.2s cubic-bezier(0.4,0,0.2,1), color 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Selected tab color in dark mode */
+body.dark-mode .navbar .active, body.dark-mode .nav .active {
+  color: #a259e6 !important;
+}
+
+.about-image-light, .about-image-dark {
+  transition: opacity 1.2s cubic-bezier(0.4,0,0.2,1) !important;
+  opacity: 1;
+}
+body.dark-mode .about-image-light {
+  opacity: 0 !important;
+}
+body.dark-mode .about-image-dark {
+  opacity: 1 !important;
+}
+body:not(.dark-mode) .about-image-dark {
+  opacity: 0 !important;
 }

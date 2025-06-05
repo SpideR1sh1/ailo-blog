@@ -1,0 +1,20 @@
+---
+title: "All Posts"
+---
+
+# 📝 All Blog Posts
+
+<div class="post-cards-grid">
+
+<!-- Add new posts here in chronological order (oldest at top) -->
+
+<a class="post-card" href="week1.qmd">
+  <img src="week1.jpg" alt="Week 1" class="post-card-img">
+  <div class="post-card-content">
+    <h2>Week 1: It's Alive – Bootstrapping the Simulated Mind</h2>
+  </div>
+</a>
+
+<!-- Add more posts as you write them! -->
+
+</div> 
