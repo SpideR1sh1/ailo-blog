@@ -12,36 +12,25 @@ Each post follows a weekly build cycle with:
 - playable sandbox simulations (built in Unity)
 - reflective writing that blends code, metaphor, and narrative
 
-## Core Goal
+## Latest Post
 
-To build agents that don't just work — they remember, feel, and change.
-This blog tracks that evolution, combining:
+### [🟩 Week 1 – Tracing the Mind: How Glassbox Began](posts/week1-glassbox.qmd)
 
-- Research-inspired engineering
-- Weekly storytelling
-- Experimental system design
+> "When a mind becomes visible, it ceases to be a black box — and becomes a mirror."
 
-## 📆 Current Phase
+This week, I started the journey into Phase 2 — *Glassbox*, an interactive debugger for transformer models. The goal is simple: make **attention** visible. In practice? Not so simple.
 
-### Phase 1: Simulated Mind in a Game World
+Glassbox is a visual tool that lets you trace what a language model is *paying attention to* as it generates text. It's not interpretability in the abstract. It's **literally watching what it thinks**.
 
-A 12-week experiment in designing agents that live, reflect, and grow inside a Stardew Valley–style sandbox. Each week introduces a new layer of mind — from walking to memory to personality drift.
+What works so far:
+* ✅ Backend powered by HuggingFace + FastAPI
+* ✅ Traces attention matrices from all layers and heads
+* ✅ Frontend force-directed graph of token-to-token attention
+* ✅ Full-stack communication via REST API
 
-### 🗺️ Latest Progress
+[Read the full post →](posts/week1-glassbox.qmd)
 
-✅ [Week 1 – "It's Alive: Bootstrapping the Simulated Mind"](posts/week1.qmd) (Coming Soon)
-- Building the bare-bones agent scaffold
-- Movement, observation, and basic loop
-- Event loop and reflex agents
-
-## Tools
-
-| Stack | Purpose |
-|-------|---------|
-| Unity | Game simulation & agent environment |
-| Python | Optional backend logic & memory manipulation |
-| Quarto | Blog generation, visual embeds, interactivity |
-| OpenAI/HuggingFace | LLMs used in later phases (Phase 2 onward) |
+---
 
 ## 🧅 What the Onion Means
 
@@ -52,13 +41,10 @@ Hover over the onion icon after a word to see its layered meaning!
 
 These terms will have:
 - The official definition
-- And my AILOcard-style version — honest, funny, and functional
+- And my AILO-style version — honest, funny, and functional
 
-Example: **Belief** <span class="onion-term">🧅<div class="onion-tooltip">
-  <h4>Belief</h4>
-  <p><strong>Formal:</strong> A structured mental representation about the world held with some confidence.</p>
-  <p><strong>AILO-style:</strong> A hunch the agent will probably act on… even if it's wrong.</p>
-</div></span>
+Example: **<span class="onion-term" data-tooltip="A structured mental representation about the world held with some confidence.">Belief</span>** 🧅  
+*AILO-style:* A hunch the agent will probably act on… even if it's wrong.
 
 These definitions live in the [glossary](glossary.qmd) and appear in hover-tooltips throughout posts.
 
@@ -76,24 +62,3 @@ It breaks down:
 - How to explain it to your obtuse martian friend
 
 Because interpretability isn't just for the models — it's for the humans, too.
-
-
-## Future Phases
-This isn't just a one-off experiment. AILO unfolds across three interconnected phases:
-
-| Phase    | Title                        | Focus                                    | 👽 Simple explanation                                      |
-|----------------|----------------------------------|---------------------------------------------|-------------------------------------------------------------------------|
-|Phase 1 | Simulated Mind in a Game World   | Agents, memory, mood, identity (Unity-based)| How intelligence is made — like growing a brain one behavior at a time   |
-| Phase 2 | LLM Debugger                     | Visual tooling for understanding how LLMs think| How intelligence thinks — and how to actually look inside its head       |
-| Phase 3 | Quantum-Native Reasoning         | Research into quantum-aligned reasoning systems| How intelligence can be redefined — with math that doesn't follow our rules |
-
-## Why This Blog Exists
-
-This isn't a devlog. It's not a textbook.
-It's a research-meets-narrative experiment, an engineering novel, one post at a time.
-
-You'll see code.
-
-You'll meet characters.
-
-And you'll slowly forget whether the agent is simulating a mind — or you are.
