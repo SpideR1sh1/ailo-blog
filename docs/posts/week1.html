@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2024-03-04">
 
-<title>Week 1: It’s Alive - Bootstrapping the Simulated Mind – AILO Blog</title>
+<title>Week 1: It’s Alive - Bootstrapping the Simulated Mind – AILO</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">AILO Blog</span>
+    <span class="navbar-title">AILO</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -99,13 +99,17 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../glossary.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../posts/index.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/aayushgarg/ailo-blog" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -114,7 +118,33 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#week-1-its-alive---bootstrapping-the-simulated-mind" id="toc-week-1-its-alive---bootstrapping-the-simulated-mind" class="nav-link active" data-scroll-target="#week-1-its-alive---bootstrapping-the-simulated-mind">Week 1: It’s Alive - Bootstrapping the Simulated Mind</a>
+  <ul class="collapse">
+  <li><a href="#this-weeks-goal" id="toc-this-weeks-goal" class="nav-link" data-scroll-target="#this-weeks-goal">🎯 This Week’s Goal</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">🧅 Key Terms</a></li>
+  <li><a href="#implementation-details" id="toc-implementation-details" class="nav-link" data-scroll-target="#implementation-details">🛠️ Implementation Details</a>
+  <ul class="collapse">
+  <li><a href="#simple-unity-world" id="toc-simple-unity-world" class="nav-link" data-scroll-target="#simple-unity-world">Simple Unity World</a></li>
+  <li><a href="#agent-prefab" id="toc-agent-prefab" class="nav-link" data-scroll-target="#agent-prefab">Agent Prefab</a></li>
+  <li><a href="#logging-system" id="toc-logging-system" class="nav-link" data-scroll-target="#logging-system">Logging System</a></li>
+  </ul></li>
+  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">📚 Key Concepts</a>
+  <ul class="collapse">
+  <li><a href="#event-loop" id="toc-event-loop" class="nav-link" data-scroll-target="#event-loop">Event Loop</a></li>
+  <li><a href="#input-output-behavior" id="toc-input-output-behavior" class="nav-link" data-scroll-target="#input-output-behavior">Input-Output Behavior</a></li>
+  <li><a href="#reflex-agents" id="toc-reflex-agents" class="nav-link" data-scroll-target="#reflex-agents">Reflex Agents</a></li>
+  </ul></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">🔮 Next Steps</a></li>
+  <li><a href="#martian-mode" id="toc-martian-mode" class="nav-link" data-scroll-target="#martian-mode">👽 Martian Mode</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -265,7 +295,7 @@ Reflex Agent
 </section>
 
 </main> <!-- /main -->
-<div id="theme-toggle-wrapper" style="display: flex; align-items: center; gap: 8px; height: 100%; padding-left: 12px;">
+<div id="theme-toggle-wrapper" style="display: flex; align-items: center; gap: 8px; height: 100%; padding-left: 0;">
 
   <label class="switch" style="margin-bottom: 0;">
 
@@ -281,47 +311,41 @@ Reflex Agent
 
 <script>
 
+(function() {
+
+  try {
+
+    var saved = localStorage.getItem('ailo-theme');
+
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+
+      document.documentElement.classList.add('dark-mode');
+
+      document.body.classList.add('dark-mode');
+
+    }
+
+  } catch(e){}
+
+})();
+
+</script>
+
+<script>
+
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Append the toggle to the navbar at the end
+  // Only inject into .quarto-navbar-tools and only if not already present
 
   var toggle = document.getElementById('theme-toggle-wrapper');
 
-  var navbar = document.querySelector('.navbar-nav, .quarto-navbar-tools, .navbar');
+  var navbarTools = document.querySelector('.quarto-navbar-tools');
 
-  if (navbar && toggle) {
+  if (navbarTools && toggle && !navbarTools.contains(toggle)) {
 
-    navbar.appendChild(toggle);
-
-  }
-
-  // Ensure background animation containers exist
-
-  function ensureBackgrounds() {
-
-    if (!document.querySelector('.sunbeams-bg')) {
-
-      const sunbeams = document.createElement('div');
-
-      sunbeams.className = 'sunbeams-bg';
-
-      document.body.appendChild(sunbeams);
-
-    }
-
-    if (!document.querySelector('.meteors-bg')) {
-
-      const meteors = document.createElement('div');
-
-      meteors.className = 'meteors-bg';
-
-      document.body.appendChild(meteors);
-
-    }
+    navbarTools.insertBefore(toggle, navbarTools.firstChild);
 
   }
-
-  ensureBackgrounds();
 
   // Theme logic
 
@@ -375,9 +399,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-</script>
+</script> 
 
-<script src="./background-anim.js"></script> 
+
+
+
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -781,7 +810,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2024 AILO Blog</p>
+<p>© 2025 AILO Blog</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

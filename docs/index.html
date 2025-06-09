@@ -122,17 +122,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#core-goal" id="toc-core-goal" class="nav-link active" data-scroll-target="#core-goal">Core Goal</a></li>
-  <li><a href="#current-phase" id="toc-current-phase" class="nav-link" data-scroll-target="#current-phase">📆 Current Phase</a>
+  <li><a href="#latest-post" id="toc-latest-post" class="nav-link active" data-scroll-target="#latest-post">Latest Post</a>
   <ul class="collapse">
-  <li><a href="#phase-1-simulated-mind-in-a-game-world" id="toc-phase-1-simulated-mind-in-a-game-world" class="nav-link" data-scroll-target="#phase-1-simulated-mind-in-a-game-world">Phase 1: Simulated Mind in a Game World</a></li>
-  <li><a href="#latest-progress" id="toc-latest-progress" class="nav-link" data-scroll-target="#latest-progress">🗺️ Latest Progress</a></li>
+  <li><a href="#week-1-tracing-the-mind-how-glassbox-began" id="toc-week-1-tracing-the-mind-how-glassbox-began" class="nav-link" data-scroll-target="#week-1-tracing-the-mind-how-glassbox-began">🟩 Week 1 – Tracing the Mind: How Glassbox Began</a></li>
   </ul></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
   <li><a href="#what-the-onion-means" id="toc-what-the-onion-means" class="nav-link" data-scroll-target="#what-the-onion-means">🧅 What the Onion Means</a></li>
   <li><a href="#who-is-the-martian" id="toc-who-is-the-martian" class="nav-link" data-scroll-target="#who-is-the-martian">👽 Who Is the Martian?</a></li>
-  <li><a href="#future-phases" id="toc-future-phases" class="nav-link" data-scroll-target="#future-phases">Future Phases</a></li>
-  <li><a href="#why-this-blog-exists" id="toc-why-this-blog-exists" class="nav-link" data-scroll-target="#why-this-blog-exists">Why This Blog Exists</a></li>
   </ul>
 </nav>
     </div>
@@ -155,75 +150,29 @@ ul.task-list li input[type="checkbox"] {
 <li>playable sandbox simulations (built in Unity)</li>
 <li>reflective writing that blends code, metaphor, and narrative</li>
 </ul>
-<section id="core-goal" class="level2">
-<h2 class="anchored" data-anchor-id="core-goal">Core Goal</h2>
-<p>To build agents that don’t just work — they remember, feel, and change. This blog tracks that evolution, combining:</p>
-<ul>
-<li>Research-inspired engineering</li>
-<li>Weekly storytelling</li>
-<li>Experimental system design</li>
-</ul>
+<section id="latest-post" class="level2">
+<h2 class="anchored" data-anchor-id="latest-post">Latest Post</h2>
+<section id="week-1-tracing-the-mind-how-glassbox-began" class="level3">
+<h3 class="anchored" data-anchor-id="week-1-tracing-the-mind-how-glassbox-began"><a href="./posts/week1-glassbox.html">🟩 Week 1 – Tracing the Mind: How Glassbox Began</a></h3>
+<blockquote class="blockquote">
+<p>“When a mind becomes visible, it ceases to be a black box — and becomes a mirror.”</p>
+</blockquote>
+<p>This week, I started the journey into Phase 2 — <em>Glassbox</em>, an interactive debugger for transformer models. The goal is simple: make <strong>attention</strong> visible. In practice? Not so simple.</p>
+<p>Glassbox is a visual tool that lets you trace what a language model is <em>paying attention to</em> as it generates text. It’s not interpretability in the abstract. It’s <strong>literally watching what it thinks</strong>.</p>
+<p>What works so far: * ✅ Backend powered by HuggingFace + FastAPI * ✅ Traces attention matrices from all layers and heads * ✅ Frontend force-directed graph of token-to-token attention * ✅ Full-stack communication via REST API</p>
+<p><a href="./posts/week1-glassbox.html">Read the full post →</a></p>
+<hr>
 </section>
-<section id="current-phase" class="level2">
-<h2 class="anchored" data-anchor-id="current-phase">📆 Current Phase</h2>
-<section id="phase-1-simulated-mind-in-a-game-world" class="level3">
-<h3 class="anchored" data-anchor-id="phase-1-simulated-mind-in-a-game-world">Phase 1: Simulated Mind in a Game World</h3>
-<p>A 12-week experiment in designing agents that live, reflect, and grow inside a Stardew Valley–style sandbox. Each week introduces a new layer of mind — from walking to memory to personality drift.</p>
-</section>
-<section id="latest-progress" class="level3">
-<h3 class="anchored" data-anchor-id="latest-progress">🗺️ Latest Progress</h3>
-<p>✅ <a href="./posts/week1.html">Week 1 – “It’s Alive: Bootstrapping the Simulated Mind”</a> (Coming Soon) - Building the bare-bones agent scaffold - Movement, observation, and basic loop - Event loop and reflex agents</p>
-</section>
-</section>
-<section id="tools" class="level2">
-<h2 class="anchored" data-anchor-id="tools">Tools</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Stack</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Unity</td>
-<td>Game simulation &amp; agent environment</td>
-</tr>
-<tr class="even">
-<td>Python</td>
-<td>Optional backend logic &amp; memory manipulation</td>
-</tr>
-<tr class="odd">
-<td>Quarto</td>
-<td>Blog generation, visual embeds, interactivity</td>
-</tr>
-<tr class="even">
-<td>OpenAI/HuggingFace</td>
-<td>LLMs used in later phases (Phase 2 onward)</td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="what-the-onion-means" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-onion-means">🧅 What the Onion Means</h2>
 <p>Wherever you see this icon → 🧅 That marks a layered word: something that needs peeling.</p>
 <p>Hover over the onion icon after a word to see its layered meaning!</p>
-<p>These terms will have: - The official definition - And my AILOcard-style version — honest, funny, and functional</p>
-Example: <strong>Belief</strong> <span class="onion-term">🧅
-<div class="onion-tooltip">
-<h4 class="anchored">
-Belief
-</h4>
-<p>
-<strong>Formal:</strong> A structured mental representation about the world held with some confidence.
-</p>
-<p>
-<strong>AILO-style:</strong> A hunch the agent will probably act on… even if it’s wrong.
-</p>
-</div>
-<p></p>
+<p>These terms will have: - The official definition - And my AILO-style version — honest, funny, and functional</p>
+<p>Example: <strong><span class="onion-term" data-tooltip="A structured mental representation about the world held with some confidence.">Belief</span></strong> 🧅<br>
+<em>AILO-style:</em> A hunch the agent will probably act on… even if it’s wrong.</p>
 <p>These definitions live in the <a href="./glossary.html">glossary</a> and appear in hover-tooltips throughout posts.</p>
-</span></section>
+</section>
 <section id="who-is-the-martian" class="level2">
 <h2 class="anchored" data-anchor-id="who-is-the-martian">👽 Who Is the Martian?</h2>
 <p>Back in middle school, my Physics teacher told me the only way to understand something was to pretend you were explaining it to a man from Mars.</p>
@@ -231,53 +180,6 @@ Belief
 <p>At the end of every post you’ll find a Martian 👽. This is a plain-language TLDR written for someone from another world (or another field).</p>
 <p>It breaks down: - What I built - Why it matters - How to explain it to your obtuse martian friend</p>
 <p>Because interpretability isn’t just for the models — it’s for the humans, too.</p>
-</section>
-<section id="future-phases" class="level2">
-<h2 class="anchored" data-anchor-id="future-phases">Future Phases</h2>
-<p>This isn’t just a one-off experiment. AILO unfolds across three interconnected phases:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 43%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Phase</th>
-<th>Title</th>
-<th>Focus</th>
-<th>👽 Simple explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Phase 1</td>
-<td>Simulated Mind in a Game World</td>
-<td>Agents, memory, mood, identity (Unity-based)</td>
-<td>How intelligence is made — like growing a brain one behavior at a time</td>
-</tr>
-<tr class="even">
-<td>Phase 2</td>
-<td>LLM Debugger</td>
-<td>Visual tooling for understanding how LLMs think</td>
-<td>How intelligence thinks — and how to actually look inside its head</td>
-</tr>
-<tr class="odd">
-<td>Phase 3</td>
-<td>Quantum-Native Reasoning</td>
-<td>Research into quantum-aligned reasoning systems</td>
-<td>How intelligence can be redefined — with math that doesn’t follow our rules</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="why-this-blog-exists" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-blog-exists">Why This Blog Exists</h2>
-<p>This isn’t a devlog. It’s not a textbook. It’s a research-meets-narrative experiment, an engineering novel, one post at a time.</p>
-<p>You’ll see code.</p>
-<p>You’ll meet characters.</p>
-<p>And you’ll slowly forget whether the agent is simulating a mind — or you are.</p>
 
 
 </section>
@@ -388,6 +290,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script> 
+
+
+
+
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

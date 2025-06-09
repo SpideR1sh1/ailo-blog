@@ -1,8 +1,8 @@
 ---
 title: "🟩 Week 1 – Tracing the Mind: How Glassbox Began"
 description: "Building an interactive debugger for transformer models that makes attention visible"
-author: "AILO Blog"
-date: "2024-12-30"
+author: "Aayush Ghosh"
+date: "2025-06-08"
 categories: [Phase 2, Glassbox, Attention, Interpretability, Week 1]
 image: "images/glassbox-preview.png"
 draft: false
@@ -14,7 +14,9 @@ draft: false
 
 ## 🧩 What I Built
 
-This week, I started the journey into Phase 2 — *Glassbox*, an interactive debugger for transformer models. The goal is simple: make **attention** visible. In practice? Not so simple.
+This week, I started the journey into Phase 2 — *Glassbox*, an interactive debugger for transformer models. The goal is simple: make **attention** visible. 
+
+In practice? Not so simple.
 
 Glassbox is a visual tool that lets you trace what a language model is *paying attention to* as it generates text. It's not interpretability in the abstract. It's **literally watching what it thinks**.
 
@@ -81,14 +83,14 @@ In a world where language models shape everything from search engines to policy 
 
 ---
 
-## 👽 Martian Mode (TL;DR)
+## 👽 Martian Mode
 
 Imagine you have a robot that reads a sentence like *"The cat sat on the mat."*
 You ask it: **"Why did you say that?"**
 
 Glassbox is your answer.
 
-It shows which words the robot paid most attention to — in every layer of its alien brain. It turns abstract math into colorful squiggles, so you can **watch language unfold**. You type something in, and Glassbox draws how the machine thinks.
+It shows which words the robot paid most attention to, in every layer of its alien brain. It turns abstract math into colorful squiggles, so you can **watch language unfold**. You type something in, and Glassbox draws how the machine thinks.
 
 Even Martians could understand that. (With subtitles.)
 
@@ -96,16 +98,20 @@ Even Martians could understand that. (With subtitles.)
 
 ## 🚧 What's Next
 
-* Model-swapping support (GPT-2, BERT, custom LLMs)
-* Token tracing across layers (layer-wise token journey)
-* Node clustering for semantic units
-* Exportable graphs and attention GIFs
-* Glassbox-inside-Notebook mode (via Jupyter frontend)
+1. **Hook up `TokenProbabilityBars` to real-time softmax probabilities**
+  - Cache `past_key_values` for fast timeline scrubbing
+  - Return only top-K attention weights from the API
+
+2. **Flow tracing**
+  - Build a breadcrumb trail that follows a token's influence across layers
+  - Add a "timeline" view to scrub through generations
+  - Implement "top-K" tracing to focus on the most important tokens
+
 
 ---
 
-**Glassbox** is not just a visualizer. It's an experiment in transparency. A mirror held up to artificial thought — chaotic, layered, fascinating.
+**Glassbox** is not just a visualizer. It's an experiment in transparency. A sneak peek into the how the cogs actually turn in a language model.
 
 Next week, I'll dive into token *flow tracing*, building a breadcrumb trail that follows a token's influence across layers.
 
-Until then — may your gradients converge, and your attention weights be interpretable. 🧠 
+Until then, goodbye and take care! 

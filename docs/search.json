@@ -49,6 +49,13 @@
     "text": "Greetings, Earthling! Let me explain what we built this week in simple terms:\nWhat We Built: A digital being that can move around and react to its environment. Think of it as a very simple robot that can walk and respond to basic commands.\nWhy It Matters: Before we can build complex AI that thinks and feels, we need to start with the basics. This is like teaching a baby to crawl before it can walk.\nHow to Explain It to Your Dog: Woof! (Translation: “It’s like a new puppy learning to move its legs for the first time. Simple, but necessary!”)\nStay tuned for more updates as we bring our first agent to life!"
   },
   {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "All Posts",
+    "section": "",
+    "text": "📝 All Blog Posts\n\n\n \n\n&lt;h2&gt;Week 1: It's Alive – Bootstrapping the Simulated Mind&lt;/h2&gt;"
+  },
+  {
     "objectID": "glossary.html",
     "href": "glossary.html",
     "title": "AILO Glossary",
@@ -112,11 +119,11 @@
     "text": "What I’m Working On\n\nSimulated Mind Agents: Building an evolving AI character system in Unity with memory, mood, and fear\nGlassbox: Designing an interpretability tool for LLMs a visual debugger that peels back the layers of token flow, attention drift, and reasoning trace.\nRobot Arm: Making a robot arm to help keep my desk clean and manageable"
   },
   {
-    "objectID": "about.html#fun-facts",
-    "href": "about.html#fun-facts",
+    "objectID": "about.html#why-i-started-this-blog",
+    "href": "about.html#why-i-started-this-blog",
     "title": "About Me",
-    "section": "🌱 Fun Facts",
-    "text": "🌱 Fun Facts\n\n[Fun fact 1]\n[Fun fact 2]\n[Fun fact 3]"
+    "section": "Why I started this blog",
+    "text": "Why I started this blog\nI started this blog as a way to document what I was doing in a structure way. Everywhere I look I see people talking about AI, LLMs, and Machine Learning without any context behind it. Barely anybody I see is actually trying to understand what living in a world with AI is going to be like. I want to explore different concepts, implement them, and see how they work. Hopefully this blog will help me understand the concepts better and help others understand them too in my own way."
   },
   {
     "objectID": "about.html#get-in-touch",
@@ -133,32 +140,18 @@
     "text": "Welcome to my blog, a storytelling-engineering journal that explores the strange, emotional, and sometimes unpredictable world of simulated intelligence. This blog documents the design of increasingly complex AI agents — not as models in a paper, but as characters in a world. You will hopefully see my successes, but more often you will see my failures.\nEach post follows a weekly build cycle with:"
   },
   {
-    "objectID": "index.html#core-goal",
-    "href": "index.html#core-goal",
+    "objectID": "index.html#latest-post",
+    "href": "index.html#latest-post",
     "title": "AILO",
-    "section": "Core Goal",
-    "text": "Core Goal\nTo build agents that don’t just work — they remember, feel, and change. This blog tracks that evolution, combining:\n\nResearch-inspired engineering\nWeekly storytelling\nExperimental system design"
-  },
-  {
-    "objectID": "index.html#current-phase",
-    "href": "index.html#current-phase",
-    "title": "AILO",
-    "section": "📆 Current Phase",
-    "text": "📆 Current Phase\n\nPhase 1: Simulated Mind in a Game World\nA 12-week experiment in designing agents that live, reflect, and grow inside a Stardew Valley–style sandbox. Each week introduces a new layer of mind — from walking to memory to personality drift.\n\n\n🗺️ Latest Progress\n✅ Week 1 – “It’s Alive: Bootstrapping the Simulated Mind” (Coming Soon) - Building the bare-bones agent scaffold - Movement, observation, and basic loop - Event loop and reflex agents"
-  },
-  {
-    "objectID": "index.html#tools",
-    "href": "index.html#tools",
-    "title": "AILO",
-    "section": "Tools",
-    "text": "Tools\n\n\n\nStack\nPurpose\n\n\n\n\nUnity\nGame simulation & agent environment\n\n\nPython\nOptional backend logic & memory manipulation\n\n\nQuarto\nBlog generation, visual embeds, interactivity\n\n\nOpenAI/HuggingFace\nLLMs used in later phases (Phase 2 onward)"
+    "section": "Latest Post",
+    "text": "Latest Post\n\n🟩 Week 1 – Tracing the Mind: How Glassbox Began\n\n“When a mind becomes visible, it ceases to be a black box — and becomes a mirror.”\n\nThis week, I started the journey into Phase 2 — Glassbox, an interactive debugger for transformer models. The goal is simple: make attention visible. In practice? Not so simple.\nGlassbox is a visual tool that lets you trace what a language model is paying attention to as it generates text. It’s not interpretability in the abstract. It’s literally watching what it thinks.\nWhat works so far: * ✅ Backend powered by HuggingFace + FastAPI * ✅ Traces attention matrices from all layers and heads * ✅ Frontend force-directed graph of token-to-token attention * ✅ Full-stack communication via REST API\nRead the full post →"
   },
   {
     "objectID": "index.html#what-the-onion-means",
     "href": "index.html#what-the-onion-means",
     "title": "AILO",
     "section": "🧅 What the Onion Means",
-    "text": "🧅 What the Onion Means\nWherever you see this icon → 🧅 That marks a layered word: something that needs peeling.\nHover over the onion icon after a word to see its layered meaning!\nThese terms will have: - The official definition - And my AILOcard-style version — honest, funny, and functional\nExample: Belief 🧅\n\n\nBelief\n\n\nFormal: A structured mental representation about the world held with some confidence.\n\n\nAILO-style: A hunch the agent will probably act on… even if it’s wrong.\n\n\n\nThese definitions live in the glossary and appear in hover-tooltips throughout posts."
+    "text": "🧅 What the Onion Means\nWherever you see this icon → 🧅 That marks a layered word: something that needs peeling.\nHover over the onion icon after a word to see its layered meaning!\nThese terms will have: - The official definition - And my AILO-style version — honest, funny, and functional\nExample: Belief 🧅\nAILO-style: A hunch the agent will probably act on… even if it’s wrong.\nThese definitions live in the glossary and appear in hover-tooltips throughout posts."
   },
   {
     "objectID": "index.html#who-is-the-martian",
@@ -166,62 +159,6 @@
     "title": "AILO",
     "section": "👽 Who Is the Martian?",
     "text": "👽 Who Is the Martian?\nBack in middle school, my Physics teacher told me the only way to understand something was to pretend you were explaining it to a man from Mars.\nI’ve never forgotten that.\nAt the end of every post you’ll find a Martian 👽. This is a plain-language TLDR written for someone from another world (or another field).\nIt breaks down: - What I built - Why it matters - How to explain it to your obtuse martian friend\nBecause interpretability isn’t just for the models — it’s for the humans, too."
-  },
-  {
-    "objectID": "index.html#future-phases",
-    "href": "index.html#future-phases",
-    "title": "AILO",
-    "section": "Future Phases",
-    "text": "Future Phases\nThis isn’t just a one-off experiment. AILO unfolds across three interconnected phases:\n\n\n\n\n\n\n\n\n\nPhase\nTitle\nFocus\n👽 Simple explanation\n\n\n\n\nPhase 1\nSimulated Mind in a Game World\nAgents, memory, mood, identity (Unity-based)\nHow intelligence is made — like growing a brain one behavior at a time\n\n\nPhase 2\nLLM Debugger\nVisual tooling for understanding how LLMs think\nHow intelligence thinks — and how to actually look inside its head\n\n\nPhase 3\nQuantum-Native Reasoning\nResearch into quantum-aligned reasoning systems\nHow intelligence can be redefined — with math that doesn’t follow our rules"
-  },
-  {
-    "objectID": "index.html#why-this-blog-exists",
-    "href": "index.html#why-this-blog-exists",
-    "title": "AILO",
-    "section": "Why This Blog Exists",
-    "text": "Why This Blog Exists\nThis isn’t a devlog. It’s not a textbook. It’s a research-meets-narrative experiment, an engineering novel, one post at a time.\nYou’ll see code.\nYou’ll meet characters.\nAnd you’ll slowly forget whether the agent is simulating a mind — or you are."
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "All Posts",
-    "section": "",
-    "text": "📝 All Blog Posts\n\n\n \n\n&lt;h2&gt;Week 1: It's Alive – Bootstrapping the Simulated Mind&lt;/h2&gt;"
-  },
-  {
-    "objectID": "index.html#martian-mode",
-    "href": "index.html#martian-mode",
-    "title": "🧅 AILO: AI is Like Onions",
-    "section": "👽 Martian Mode",
-    "text": "👽 Martian Mode\nAt the end of each post, Martian Mode 👽 provides a plain-language summary for broad accessibility."
-  },
-  {
-    "objectID": "about.html#wh",
-    "href": "about.html#wh",
-    "title": "About Me",
-    "section": "Wh",
-    "text": "Wh"
-  },
-  {
-    "objectID": "about.html#why-i-star",
-    "href": "about.html#why-i-star",
-    "title": "About Me",
-    "section": "Why I star",
-    "text": "Why I star"
-  },
-  {
-    "objectID": "about.html#why-i-started-this-b",
-    "href": "about.html#why-i-started-this-b",
-    "title": "About Me",
-    "section": "Why I started this b",
-    "text": "Why I started this b"
-  },
-  {
-    "objectID": "about.html#why-i-started-this-blog",
-    "href": "about.html#why-i-started-this-blog",
-    "title": "About Me",
-    "section": "Why I started this blog",
-    "text": "Why I started this blog\nI started this blog as a way to document what I was doing in a structure way. Everywhere I look I see people talking about AI, LLMs, and Machine Learning without any context behind it. Barely anybody I see is actually trying to understand what living in a world with AI is going to be like. I want to explore different concepts, implement them, and see how they work. Hopefully this blog will help me understand the concepts better and help others understand them too in my own way."
   },
   {
     "objectID": "posts/week1-glassbox.html",
@@ -235,7 +172,7 @@
     "href": "posts/week1-glassbox.html#what-i-built",
     "title": "🟩 Week 1 – Tracing the Mind: How Glassbox Began",
     "section": "🧩 What I Built",
-    "text": "🧩 What I Built\nThis week, I started the journey into Phase 2 — Glassbox, an interactive debugger for transformer models. The goal is simple: make attention visible. In practice? Not so simple.\nGlassbox is a visual tool that lets you trace what a language model is paying attention to as it generates text. It’s not interpretability in the abstract. It’s literally watching what it thinks.\nWhat works so far:\n\n✅ Backend powered by HuggingFace + FastAPI\n✅ Traces attention matrices from all layers and heads\n✅ Frontend force-directed graph of token-to-token attention\n✅ Full-stack communication via REST API\n✅ Dynamic controls to filter layers, heads, weights, and interactions"
+    "text": "🧩 What I Built\nThis week, I started the journey into Phase 2 — Glassbox, an interactive debugger for transformer models. The goal is simple: make attention visible.\nIn practice? Not so simple.\nGlassbox is a visual tool that lets you trace what a language model is paying attention to as it generates text. It’s not interpretability in the abstract. It’s literally watching what it thinks.\nWhat works so far:\n\n✅ Backend powered by HuggingFace + FastAPI\n✅ Traces attention matrices from all layers and heads\n✅ Frontend force-directed graph of token-to-token attention\n✅ Full-stack communication via REST API\n✅ Dynamic controls to filter layers, heads, weights, and interactions"
   },
   {
     "objectID": "posts/week1-glassbox.html#the-system",
@@ -259,17 +196,17 @@
     "text": "🧅 Definitions Layer\n\nAttention 🧅\nAILO-style: The model’s version of “making eye contact” — it looks at the parts that matter (or at least tries to).\nMulti-head attention 🧅\nAILO-style: Like having 12 gossipy friends all reading the same sentence and whispering what matters to them."
   },
   {
-    "objectID": "posts/week1-glassbox.html#martian-mode-tldr",
-    "href": "posts/week1-glassbox.html#martian-mode-tldr",
+    "objectID": "posts/week1-glassbox.html#martian-mode",
+    "href": "posts/week1-glassbox.html#martian-mode",
     "title": "🟩 Week 1 – Tracing the Mind: How Glassbox Began",
-    "section": "👽 Martian Mode (TL;DR)",
-    "text": "👽 Martian Mode (TL;DR)\nImagine you have a robot that reads a sentence like “The cat sat on the mat.” You ask it: “Why did you say that?”\nGlassbox is your answer.\nIt shows which words the robot paid most attention to — in every layer of its alien brain. It turns abstract math into colorful squiggles, so you can watch language unfold. You type something in, and Glassbox draws how the machine thinks.\nEven Martians could understand that. (With subtitles.)"
+    "section": "👽 Martian Mode",
+    "text": "👽 Martian Mode\nImagine you have a robot that reads a sentence like “The cat sat on the mat.” You ask it: “Why did you say that?”\nGlassbox is your answer.\nIt shows which words the robot paid most attention to, in every layer of its alien brain. It turns abstract math into colorful squiggles, so you can watch language unfold. You type something in, and Glassbox draws how the machine thinks.\nEven Martians could understand that. (With subtitles.)"
   },
   {
     "objectID": "posts/week1-glassbox.html#whats-next",
     "href": "posts/week1-glassbox.html#whats-next",
     "title": "🟩 Week 1 – Tracing the Mind: How Glassbox Began",
     "section": "🚧 What’s Next",
-    "text": "🚧 What’s Next\n\nModel-swapping support (GPT-2, BERT, custom LLMs)\nToken tracing across layers (layer-wise token journey)\nNode clustering for semantic units\nExportable graphs and attention GIFs\nGlassbox-inside-Notebook mode (via Jupyter frontend)\n\n\nGlassbox is not just a visualizer. It’s an experiment in transparency. A mirror held up to artificial thought — chaotic, layered, fascinating.\nNext week, I’ll dive into token flow tracing, building a breadcrumb trail that follows a token’s influence across layers.\nUntil then — may your gradients converge, and your attention weights be interpretable. 🧠"
+    "text": "🚧 What’s Next\n\nHook up TokenProbabilityBars to real-time softmax probabilities\n\n\nCache past_key_values for fast timeline scrubbing\nReturn only top-K attention weights from the API\n\n\nFlow tracing\n\n\nBuild a breadcrumb trail that follows a token’s influence across layers\nAdd a “timeline” view to scrub through generations\nImplement “top-K” tracing to focus on the most important tokens\n\n\nGlassbox is not just a visualizer. It’s an experiment in transparency. A sneak peek into the how the cogs actually turn in a language model.\nNext week, I’ll dive into token flow tracing, building a breadcrumb trail that follows a token’s influence across layers.\nUntil then, goodbye and take care!"
   }
 ]

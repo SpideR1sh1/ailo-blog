@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="AILO Blog">
-<meta name="dcterms.date" content="2024-12-30">
+<meta name="author" content="Aayush Ghosh">
+<meta name="dcterms.date" content="2025-06-08">
 <meta name="description" content="Building an interactive debugger for transformer models that makes attention visible">
 
 <title>🟩 Week 1 – Tracing the Mind: How Glassbox Began – AILO</title>
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-system" id="toc-the-system" class="nav-link" data-scroll-target="#the-system">🔍 The System</a></li>
   <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">🎯 Why It Matters</a></li>
   <li><a href="#definitions-layer" id="toc-definitions-layer" class="nav-link" data-scroll-target="#definitions-layer">🧅 Definitions Layer</a></li>
-  <li><a href="#martian-mode-tldr" id="toc-martian-mode-tldr" class="nav-link" data-scroll-target="#martian-mode-tldr">👽 Martian Mode (TL;DR)</a></li>
+  <li><a href="#martian-mode" id="toc-martian-mode" class="nav-link" data-scroll-target="#martian-mode">👽 Martian Mode</a></li>
   <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next">🚧 What’s Next</a></li>
   </ul>
 </nav>
@@ -161,14 +161,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>AILO Blog </p>
+             <p>Aayush Ghosh </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 30, 2024</p>
+      <p class="date">June 8, 2025</p>
     </div>
   </div>
   
@@ -186,7 +186,8 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="what-i-built" class="level2">
 <h2 class="anchored" data-anchor-id="what-i-built">🧩 What I Built</h2>
-<p>This week, I started the journey into Phase 2 — <em>Glassbox</em>, an interactive debugger for transformer models. The goal is simple: make <strong>attention</strong> visible. In practice? Not so simple.</p>
+<p>This week, I started the journey into Phase 2 — <em>Glassbox</em>, an interactive debugger for transformer models. The goal is simple: make <strong>attention</strong> visible.</p>
+<p>In practice? Not so simple.</p>
 <p>Glassbox is a visual tool that lets you trace what a language model is <em>paying attention to</em> as it generates text. It’s not interpretability in the abstract. It’s <strong>literally watching what it thinks</strong>.</p>
 <p>What works so far:</p>
 <ul>
@@ -244,27 +245,35 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="martian-mode-tldr" class="level2">
-<h2 class="anchored" data-anchor-id="martian-mode-tldr">👽 Martian Mode (TL;DR)</h2>
+<section id="martian-mode" class="level2">
+<h2 class="anchored" data-anchor-id="martian-mode">👽 Martian Mode</h2>
 <p>Imagine you have a robot that reads a sentence like <em>“The cat sat on the mat.”</em> You ask it: <strong>“Why did you say that?”</strong></p>
 <p>Glassbox is your answer.</p>
-<p>It shows which words the robot paid most attention to — in every layer of its alien brain. It turns abstract math into colorful squiggles, so you can <strong>watch language unfold</strong>. You type something in, and Glassbox draws how the machine thinks.</p>
+<p>It shows which words the robot paid most attention to, in every layer of its alien brain. It turns abstract math into colorful squiggles, so you can <strong>watch language unfold</strong>. You type something in, and Glassbox draws how the machine thinks.</p>
 <p>Even Martians could understand that. (With subtitles.)</p>
 <hr>
 </section>
 <section id="whats-next" class="level2">
 <h2 class="anchored" data-anchor-id="whats-next">🚧 What’s Next</h2>
+<ol type="1">
+<li><strong>Hook up <code>TokenProbabilityBars</code> to real-time softmax probabilities</strong></li>
+</ol>
 <ul>
-<li>Model-swapping support (GPT-2, BERT, custom LLMs)</li>
-<li>Token tracing across layers (layer-wise token journey)</li>
-<li>Node clustering for semantic units</li>
-<li>Exportable graphs and attention GIFs</li>
-<li>Glassbox-inside-Notebook mode (via Jupyter frontend)</li>
+<li>Cache <code>past_key_values</code> for fast timeline scrubbing</li>
+<li>Return only top-K attention weights from the API</li>
+</ul>
+<ol start="2" type="1">
+<li><strong>Flow tracing</strong></li>
+</ol>
+<ul>
+<li>Build a breadcrumb trail that follows a token’s influence across layers</li>
+<li>Add a “timeline” view to scrub through generations</li>
+<li>Implement “top-K” tracing to focus on the most important tokens</li>
 </ul>
 <hr>
-<p><strong>Glassbox</strong> is not just a visualizer. It’s an experiment in transparency. A mirror held up to artificial thought — chaotic, layered, fascinating.</p>
+<p><strong>Glassbox</strong> is not just a visualizer. It’s an experiment in transparency. A sneak peek into the how the cogs actually turn in a language model.</p>
 <p>Next week, I’ll dive into token <em>flow tracing</em>, building a breadcrumb trail that follows a token’s influence across layers.</p>
-<p>Until then — may your gradients converge, and your attention weights be interpretable. 🧠</p>
+<p>Until then, goodbye and take care!</p>
 
 
 </section>
@@ -375,6 +384,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script> 
+
+
+
+
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
