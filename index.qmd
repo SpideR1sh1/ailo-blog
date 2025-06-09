@@ -68,7 +68,7 @@ Back in middle school, my Physics teacher told me the only way to understand som
 
 I've never forgotten that.
 
-At the end of every post you'll find a Martian Mode 👽. This is a plain-language TLDR written for someone from another world — or another field.
+At the end of every post you'll find a Martian 👽. This is a plain-language TLDR written for someone from another world (or another field).
 
 It breaks down:
 - What I built
@@ -90,7 +90,7 @@ This isn't just a one-off experiment. AILO unfolds across three interconnected p
 ## Why This Blog Exists
 
 This isn't a devlog. It's not a textbook.
-It's a research-meets-narrative experiment — an engineering novel, one post at a time.
+It's a research-meets-narrative experiment, an engineering novel, one post at a time.
 
 You'll see code.
 

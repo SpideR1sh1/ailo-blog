@@ -1,3 +1,10 @@
+<div id="theme-toggle-wrapper" style="display: flex; align-items: center; gap: 8px; height: 100%; padding-left: 0;">
+  <label class="switch" style="margin-bottom: 0;">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider round"></span>
+  </label>
+  <span id="theme-icon" style="font-size: 1.2em;">🌞</span>
+</div>
 <script>
 (function() {
   try {
@@ -9,20 +16,13 @@
   } catch(e){}
 })();
 </script>
-<div id="theme-toggle-wrapper" style="display: flex; align-items: center; gap: 8px; height: 100%; padding-left: 12px;">
-  <label class="switch" style="margin-bottom: 0;">
-    <input type="checkbox" id="theme-toggle">
-    <span class="slider round"></span>
-  </label>
-  <span id="theme-icon" style="font-size: 1.2em;">🌞</span>
-</div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Append the toggle to the navbar at the end
+  // Only inject into .quarto-navbar-tools and only if not already present
   var toggle = document.getElementById('theme-toggle-wrapper');
-  var navbar = document.querySelector('.navbar-nav, .quarto-navbar-tools, .navbar');
-  if (navbar && toggle) {
-    navbar.appendChild(toggle);
+  var navbarTools = document.querySelector('.quarto-navbar-tools');
+  if (navbarTools && toggle && !navbarTools.contains(toggle)) {
+    navbarTools.insertBefore(toggle, navbarTools.firstChild);
   }
   // Theme logic
   const input = document.getElementById('theme-toggle');

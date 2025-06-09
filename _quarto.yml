@@ -3,20 +3,21 @@ project:
   output-dir: docs
 
 website:
-  title: "AILO Blog"
+  title: "AILO"
   navbar:
     left:
       - text: Home
         href: index.qmd
       - text: About
         href: about.qmd
+      - text: Glossary
+        href: glossary.qmd
       - text: Posts
         href: posts/index.qmd
     tools:
-      - icon: github
-        href: https://github.com/aayushgarg/ailo-blog
+      - html: inject-toggle.html
   page-footer:
-    left: "&copy; 2024 AILO Blog"
+    left: "&copy; 2025 AILO Blog"
     right: "Built with Quarto"
 
 format:
@@ -27,6 +28,8 @@ format:
     css: styles.css
     include-after-body:
       - inject-toggle.html
+    toc: true
+    toc-location: right
 
 
 

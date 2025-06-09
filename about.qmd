@@ -7,7 +7,7 @@ title: "About Me"
   <img src="about-image-night.png" alt="Your Name Night" style="max-width: 500px; position: absolute; left: 50%; top: 0; transform: translateX(-50%);" class="about-image-dark">
 </div>
 <h1 style="margin-bottom: 0.2em; text-align: center;">Hi, I'm <span style="color: #337652;">Aayush Ghosh</span>!</h1>
-<p style="font-size: 1.2em; color: #555; text-align: center;">[Your Tagline or Short Bio Here]</p>
+<p style="font-size: 1.2em; color: #555; text-align: center;">I make things, so they can make things so I dont have to make things</p>
 
 ## 👋 About Me
 
@@ -23,24 +23,20 @@ title: "About Me"
 - [Skill or Interest 3]
 - [Add more as needed]
 
-## 🚀 What I'm Working On
+## What I'm Working On
 
-- [Project or goal 1]
-- [Project or goal 2]
-- [What excites you right now?]
+- Simulated Mind Agents: Building an evolving AI character system in Unity with memory, mood, and fear
+- Glassbox: Designing an interpretability tool for LLMs a visual debugger that peels back the layers of token flow, attention drift, and reasoning trace.
+- Robot Arm: Making a robot arm to help keep my desk clean and manageable
 
-## 🌱 Fun Facts
+## Why I started this blog
 
-- [Fun fact 1]
-- [Fun fact 2]
-- [Fun fact 3]
+I started this blog as a way to document what I was doing in a structure way. Everywhere I look I see people talking about AI, LLMs, and Machine Learning without any context behind it. Barely anybody I see is actually trying to understand what living in a world with AI is going to be like. I want to explore different concepts, implement them, and see how they work. Hopefully this blog will help me understand the concepts better and help others understand them too in my own way.
 
 ## 📫 Get in Touch
 
-- **Email:** rishi.gh2002\@email.com
-- **GitHub:** SpideR1sh1
-- **LinkedIn:** spiderishi
+- **Email:** [rishi.gh2002@email.com](mailto:rishi.gh2002@email.com)
+- **GitHub:** <a href="https://github.com/SpideR1sh1" target="_blank" rel="noopener">SpideR1sh1</a>
+- **LinkedIn:** <a href="https://www.linkedin.com/in/spiderishi" target="_blank" rel="noopener">spiderishi</a>
 
 ---
-
-*Feel free to fill in the blanks and make this page your own!*

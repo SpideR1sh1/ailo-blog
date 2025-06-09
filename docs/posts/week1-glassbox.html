@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="AILO Blog">
+<meta name="dcterms.date" content="2024-12-30">
+<meta name="description" content="Building an interactive debugger for transformer models that makes attention visible">
 
-<title>About Me – AILO</title>
+<title>🟩 Week 1 – Tracing the Mind: How Glassbox Began – AILO</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -79,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">AILO</span>
     </a>
   </div>
@@ -90,19 +93,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./glossary.html"> 
+    <a class="nav-link" href="../glossary.html"> 
 <span class="menu-text">Glossary</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts/index.html"> 
+    <a class="nav-link" href="../posts/index.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
@@ -122,11 +125,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">👋 About Me</a></li>
-  <li><a href="#skills-interests" id="toc-skills-interests" class="nav-link" data-scroll-target="#skills-interests">🛠️ Skills &amp; Interests</a></li>
-  <li><a href="#what-im-working-on" id="toc-what-im-working-on" class="nav-link" data-scroll-target="#what-im-working-on">What I’m Working On</a></li>
-  <li><a href="#why-i-started-this-blog" id="toc-why-i-started-this-blog" class="nav-link" data-scroll-target="#why-i-started-this-blog">Why I started this blog</a></li>
-  <li><a href="#get-in-touch" id="toc-get-in-touch" class="nav-link" data-scroll-target="#get-in-touch">📫 Get in Touch</a></li>
+  <li><a href="#what-i-built" id="toc-what-i-built" class="nav-link active" data-scroll-target="#what-i-built">🧩 What I Built</a></li>
+  <li><a href="#the-system" id="toc-the-system" class="nav-link" data-scroll-target="#the-system">🔍 The System</a></li>
+  <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">🎯 Why It Matters</a></li>
+  <li><a href="#definitions-layer" id="toc-definitions-layer" class="nav-link" data-scroll-target="#definitions-layer">🧅 Definitions Layer</a></li>
+  <li><a href="#martian-mode-tldr" id="toc-martian-mode-tldr" class="nav-link" data-scroll-target="#martian-mode-tldr">👽 Martian Mode (TL;DR)</a></li>
+  <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next">🚧 What’s Next</a></li>
   </ul>
 </nav>
     </div>
@@ -135,14 +139,38 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
-</div>
+<h1 class="title">🟩 Week 1 – Tracing the Mind: How Glassbox Began</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Phase 2</div>
+    <div class="quarto-category">Glassbox</div>
+    <div class="quarto-category">Attention</div>
+    <div class="quarto-category">Interpretability</div>
+    <div class="quarto-category">Week 1</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Building an interactive debugger for transformer models that makes attention visible
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>AILO Blog </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 30, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -152,53 +180,91 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div style="position: relative; height: 300px; margin-bottom: 2em;">
-<p><img src="about-image.png" alt="Your Name" style="max-width: 500px; position: absolute; left: 50%; top: 0; transform: translateX(-50%);" class="about-image-light"> <img src="about-image-night.png" alt="Your Name Night" style="max-width: 500px; position: absolute; left: 50%; top: 0; transform: translateX(-50%);" class="about-image-dark"></p>
-</div>
-<h1 style="margin-bottom: 0.2em; text-align: center;">
-Hi, I’m <span style="color: #337652;">Aayush Ghosh</span>!
-</h1>
-<p style="font-size: 1.2em; color: #555; text-align: center;">
-I make things, so they can make things so I dont have to make things
-</p>
-<section id="about-me" class="level2">
-<h2 class="anchored" data-anchor-id="about-me">👋 About Me</h2>
+<blockquote class="blockquote">
+<p>“When a mind becomes visible, it ceases to be a black box — and becomes a mirror.”</p>
+</blockquote>
+<hr>
+<section id="what-i-built" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-built">🧩 What I Built</h2>
+<p>This week, I started the journey into Phase 2 — <em>Glassbox</em>, an interactive debugger for transformer models. The goal is simple: make <strong>attention</strong> visible. In practice? Not so simple.</p>
+<p>Glassbox is a visual tool that lets you trace what a language model is <em>paying attention to</em> as it generates text. It’s not interpretability in the abstract. It’s <strong>literally watching what it thinks</strong>.</p>
+<p>What works so far:</p>
 <ul>
-<li><strong>Location:</strong> USA</li>
-<li><strong>Pronouns:</strong> he/him</li>
-<li><strong>Current Role:</strong> Learner</li>
-<li><strong>Background:</strong> I am a student @ Purdue University, majoring in Computer Science. Currently working with or learning Quantitative Finance, Quantum Physics, Quantum Computing, and Artificial Intelligence.</li>
-</ul>
-</section>
-<section id="skills-interests" class="level2">
-<h2 class="anchored" data-anchor-id="skills-interests">🛠️ Skills &amp; Interests</h2>
-<ul>
-<li>[Skill or Interest 1]</li>
-<li>[Skill or Interest 2]</li>
-<li>[Skill or Interest 3]</li>
-<li>[Add more as needed]</li>
-</ul>
-</section>
-<section id="what-im-working-on" class="level2">
-<h2 class="anchored" data-anchor-id="what-im-working-on">What I’m Working On</h2>
-<ul>
-<li>Simulated Mind Agents: Building an evolving AI character system in Unity with memory, mood, and fear</li>
-<li>Glassbox: Designing an interpretability tool for LLMs a visual debugger that peels back the layers of token flow, attention drift, and reasoning trace.</li>
-<li>Robot Arm: Making a robot arm to help keep my desk clean and manageable</li>
-</ul>
-</section>
-<section id="why-i-started-this-blog" class="level2">
-<h2 class="anchored" data-anchor-id="why-i-started-this-blog">Why I started this blog</h2>
-<p>I started this blog as a way to document what I was doing in a structure way. Everywhere I look I see people talking about AI, LLMs, and Machine Learning without any context behind it. Barely anybody I see is actually trying to understand what living in a world with AI is going to be like. I want to explore different concepts, implement them, and see how they work. Hopefully this blog will help me understand the concepts better and help others understand them too in my own way.</p>
-</section>
-<section id="get-in-touch" class="level2">
-<h2 class="anchored" data-anchor-id="get-in-touch">📫 Get in Touch</h2>
-<ul>
-<li><strong>Email:</strong> <a href="mailto:rishi.gh2002@email.com">rishi.gh2002@email.com</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/SpideR1sh1">SpideR1sh1</a></li>
-<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/spiderishi">spiderishi</a></li>
+<li>✅ Backend powered by HuggingFace + FastAPI</li>
+<li>✅ Traces attention matrices from all layers and heads</li>
+<li>✅ Frontend force-directed graph of token-to-token attention</li>
+<li>✅ Full-stack communication via REST API</li>
+<li>✅ Dynamic controls to filter layers, heads, weights, and interactions</li>
 </ul>
 <hr>
+</section>
+<section id="the-system" class="level2">
+<h2 class="anchored" data-anchor-id="the-system">🔍 The System</h2>
+<p><strong>Backend:</strong></p>
+<p>At its heart is a <code>ModelTracer</code> — a class that wraps <code>DialoGPT-medium</code>, injecting itself into the model’s forward pass to capture full <code>output_attentions=True</code> matrices.</p>
+<p>Each response includes:</p>
+<ul>
+<li><code>tokens</code>: the tokenized input</li>
+<li><code>attention</code>: a 4D tensor → <code>[layer][head][from_token][to_token]</code></li>
+<li><code>generated_text</code>: the actual model output</li>
+</ul>
+<p>The FastAPI server exposes a <code>/api/trace</code> endpoint, making the system modular and extensible.</p>
+<p><strong>Frontend:</strong></p>
+<p>Built with React + D3.js, the interface renders a <strong>force-directed attention graph</strong>:</p>
+<ul>
+<li><strong>Nodes</strong> = tokens</li>
+<li><strong>Links</strong> = attention weights</li>
+<li><strong>Colors</strong> = attention strength gradient (red → green)</li>
+<li><strong>Size</strong> = total incoming attention</li>
+<li><strong>Particles</strong> = attention direction</li>
+</ul>
+<p>Users can zoom, pan, isolate layers and heads, and filter by weight thresholds.</p>
+<hr>
+</section>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">🎯 Why It Matters</h2>
+<p>Attention is one of the few <strong>windows</strong> into the inner workings of large language models. But most visualizations are static, clunky, or deeply academic.</p>
+<p>Glassbox aims to be:</p>
+<ul>
+<li><strong>Live</strong>: Generates attention in real time.</li>
+<li><strong>Interactive</strong>: You drag the nodes, not just read about them.</li>
+<li><strong>Modular</strong>: Drop in any HF model (soon) and get instant insight.</li>
+<li><strong>Beautiful</strong>: Interpretability should not look like a spreadsheet.</li>
+</ul>
+<p>In a world where language models shape everything from search engines to policy drafts, it’s not enough to know they work. We need to see <strong>how</strong> they work.</p>
+<hr>
+</section>
+<section id="definitions-layer" class="level2">
+<h2 class="anchored" data-anchor-id="definitions-layer">🧅 Definitions Layer</h2>
+<ul>
+<li><p><strong><span class="onion-term" data-tooltip="A mechanism that allows models to focus on different parts of the input when making predictions.">Attention</span></strong> 🧅<br>
+<em>AILO-style:</em> The model’s version of “making eye contact” — it looks at the parts that matter (or at least tries to).</p></li>
+<li><p><strong><span class="onion-term" data-tooltip="A method where the model splits its attention mechanism into multiple 'heads' to capture different aspects of input relations.">Multi-head attention</span></strong> 🧅<br>
+<em>AILO-style:</em> Like having 12 gossipy friends all reading the same sentence and whispering what matters to them.</p></li>
+</ul>
+<hr>
+</section>
+<section id="martian-mode-tldr" class="level2">
+<h2 class="anchored" data-anchor-id="martian-mode-tldr">👽 Martian Mode (TL;DR)</h2>
+<p>Imagine you have a robot that reads a sentence like <em>“The cat sat on the mat.”</em> You ask it: <strong>“Why did you say that?”</strong></p>
+<p>Glassbox is your answer.</p>
+<p>It shows which words the robot paid most attention to — in every layer of its alien brain. It turns abstract math into colorful squiggles, so you can <strong>watch language unfold</strong>. You type something in, and Glassbox draws how the machine thinks.</p>
+<p>Even Martians could understand that. (With subtitles.)</p>
+<hr>
+</section>
+<section id="whats-next" class="level2">
+<h2 class="anchored" data-anchor-id="whats-next">🚧 What’s Next</h2>
+<ul>
+<li>Model-swapping support (GPT-2, BERT, custom LLMs)</li>
+<li>Token tracing across layers (layer-wise token journey)</li>
+<li>Node clustering for semantic units</li>
+<li>Exportable graphs and attention GIFs</li>
+<li>Glassbox-inside-Notebook mode (via Jupyter frontend)</li>
+</ul>
+<hr>
+<p><strong>Glassbox</strong> is not just a visualizer. It’s an experiment in transparency. A mirror held up to artificial thought — chaotic, layered, fascinating.</p>
+<p>Next week, I’ll dive into token <em>flow tracing</em>, building a breadcrumb trail that follows a token’s influence across layers.</p>
+<p>Until then — may your gradients converge, and your attention weights be interpretable. 🧠</p>
 
 
 </section>

@@ -204,3 +204,23 @@ body.dark-mode .about-image-dark {
 body:not(.dark-mode) .about-image-dark {
   opacity: 0 !important;
 }
+
+.quarto-navbar-tools {
+  display: flex !important;
+  align-items: center !important;
+  gap: 24px !important;
+  flex-direction: row !important;
+}
+
+.quarto-navbar-tools > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Remove duplicate search icons if present */
+.quarto-navbar-tools .quarto-navigation-tool[aria-label="Search"] ~ .quarto-navigation-tool[aria-label="Search"] {
+  display: none !important;
+}

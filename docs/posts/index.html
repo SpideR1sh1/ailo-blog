@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,13 +98,18 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../glossary.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="../posts/index.html" aria-current="page"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/aayushgarg/ailo-blog" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-"></i></a>
+    <a href="https://github.com/SpideR1sh1" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -113,7 +118,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#all-blog-posts" id="toc-all-blog-posts" class="nav-link active" data-scroll-target="#all-blog-posts">📝 All Blog Posts</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -152,6 +165,20 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<div id="theme-toggle-wrapper" style="display: flex; align-items: center; gap: 8px; height: 100%; padding-left: 0;">
+
+  <label class="switch" style="margin-bottom: 0;">
+
+    <input type="checkbox" id="theme-toggle">
+
+    <span class="slider round"></span>
+
+  </label>
+
+  <span id="theme-icon" style="font-size: 1.2em;">🌞</span>
+
+</div>
+
 <script>
 
 (function() {
@@ -174,33 +201,19 @@ ul.task-list li input[type="checkbox"] {
 
 </script>
 
-<div id="theme-toggle-wrapper" style="display: flex; align-items: center; gap: 8px; height: 100%; padding-left: 12px;">
-
-  <label class="switch" style="margin-bottom: 0;">
-
-    <input type="checkbox" id="theme-toggle">
-
-    <span class="slider round"></span>
-
-  </label>
-
-  <span id="theme-icon" style="font-size: 1.2em;">🌞</span>
-
-</div>
-
 <script>
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Append the toggle to the navbar at the end
+  // Only inject into .quarto-navbar-tools and only if not already present
 
   var toggle = document.getElementById('theme-toggle-wrapper');
 
-  var navbar = document.querySelector('.navbar-nav, .quarto-navbar-tools, .navbar');
+  var navbarTools = document.querySelector('.quarto-navbar-tools');
 
-  if (navbar && toggle) {
+  if (navbarTools && toggle && !navbarTools.contains(toggle)) {
 
-    navbar.appendChild(toggle);
+    navbarTools.insertBefore(toggle, navbarTools.firstChild);
 
   }
 
