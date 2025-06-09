@@ -1,0 +1,111 @@
+---
+title: "🟩 Week 1 – Tracing the Mind: How Glassbox Began"
+description: "Building an interactive debugger for transformer models that makes attention visible"
+author: "AILO Blog"
+date: "2024-12-30"
+categories: [Phase 2, Glassbox, Attention, Interpretability, Week 1]
+image: "images/glassbox-preview.png"
+draft: false
+---
+
+> "When a mind becomes visible, it ceases to be a black box — and becomes a mirror."
+
+---
+
+## 🧩 What I Built
+
+This week, I started the journey into Phase 2 — *Glassbox*, an interactive debugger for transformer models. The goal is simple: make **attention** visible. In practice? Not so simple.
+
+Glassbox is a visual tool that lets you trace what a language model is *paying attention to* as it generates text. It's not interpretability in the abstract. It's **literally watching what it thinks**.
+
+What works so far:
+
+* ✅ Backend powered by HuggingFace + FastAPI
+* ✅ Traces attention matrices from all layers and heads
+* ✅ Frontend force-directed graph of token-to-token attention
+* ✅ Full-stack communication via REST API
+* ✅ Dynamic controls to filter layers, heads, weights, and interactions
+
+---
+
+## 🔍 The System
+
+**Backend:**
+
+At its heart is a `ModelTracer` — a class that wraps `DialoGPT-medium`, injecting itself into the model's forward pass to capture full `output_attentions=True` matrices.
+
+Each response includes:
+
+* `tokens`: the tokenized input
+* `attention`: a 4D tensor → `[layer][head][from_token][to_token]`
+* `generated_text`: the actual model output
+
+The FastAPI server exposes a `/api/trace` endpoint, making the system modular and extensible.
+
+**Frontend:**
+
+Built with React + D3.js, the interface renders a **force-directed attention graph**:
+
+* **Nodes** = tokens
+* **Links** = attention weights
+* **Colors** = attention strength gradient (red → green)
+* **Size** = total incoming attention
+* **Particles** = attention direction
+
+Users can zoom, pan, isolate layers and heads, and filter by weight thresholds.
+
+---
+
+## 🎯 Why It Matters
+
+Attention is one of the few **windows** into the inner workings of large language models. But most visualizations are static, clunky, or deeply academic.
+
+Glassbox aims to be:
+
+* **Live**: Generates attention in real time.
+* **Interactive**: You drag the nodes, not just read about them.
+* **Modular**: Drop in any HF model (soon) and get instant insight.
+* **Beautiful**: Interpretability should not look like a spreadsheet.
+
+In a world where language models shape everything from search engines to policy drafts, it's not enough to know they work. We need to see **how** they work.
+
+---
+
+## 🧅 Definitions Layer
+
+* **<span class="onion-term" data-tooltip="A mechanism that allows models to focus on different parts of the input when making predictions.">Attention</span>** 🧅  
+  *AILO-style:* The model's version of "making eye contact" — it looks at the parts that matter (or at least tries to).
+
+* **<span class="onion-term" data-tooltip="A method where the model splits its attention mechanism into multiple 'heads' to capture different aspects of input relations.">Multi-head attention</span>** 🧅  
+  *AILO-style:* Like having 12 gossipy friends all reading the same sentence and whispering what matters to them.
+
+---
+
+## 👽 Martian Mode (TL;DR)
+
+Imagine you have a robot that reads a sentence like *"The cat sat on the mat."*
+You ask it: **"Why did you say that?"**
+
+Glassbox is your answer.
+
+It shows which words the robot paid most attention to — in every layer of its alien brain. It turns abstract math into colorful squiggles, so you can **watch language unfold**. You type something in, and Glassbox draws how the machine thinks.
+
+Even Martians could understand that. (With subtitles.)
+
+---
+
+## 🚧 What's Next
+
+* Model-swapping support (GPT-2, BERT, custom LLMs)
+* Token tracing across layers (layer-wise token journey)
+* Node clustering for semantic units
+* Exportable graphs and attention GIFs
+* Glassbox-inside-Notebook mode (via Jupyter frontend)
+
+---
+
+**Glassbox** is not just a visualizer. It's an experiment in transparency. A mirror held up to artificial thought — chaotic, layered, fascinating.
+
+Next week, I'll dive into token *flow tracing*, building a breadcrumb trail that follows a token's influence across layers.
+
+Until then — may your gradients converge, and your attention weights be interpretable. 🧠 
